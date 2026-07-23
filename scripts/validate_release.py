@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
-"""Validate OMNARA package structure and canonical custody."""
+"""Validate the standalone OMNARA skill source tree."""
 
 from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 EXPECTED_HASHES = {
-    "personas/canonical-omnara-t3-v1.md": "802E7CB66337A96C56BB3EC69D7F8A7F39A861D058EEE8166DCDC8B5D560D0B4",
-    "personas/canonical-webworker-t3-v3.md": "EC61B5046D65B7571D54A3C00B24CAB5A4920F6FC2F51112D0C0F83180A1899A",
-    "references/canonical/inquiry-engine-v1.md": "3C817B1A1FFDF6E6D66D51B2E0CB0949FC6AB50CD1DB61CAAC6473778AA60A97",
-    "references/canonical/comprehensive-analysis-of-agentic-deep-research-architectures.md": "F0D5206F79B7BCA16AB315AA71CA7FC05646EAD8A1E9402D916464436C1388BE",
+    "references/canonical/inquiry-engine-v1.md": (
+        "351183C36A1D14B1FA28B1DDCE9D0AD0437ECF627CFF90150F4ACBB02928AFD0"
+    ),
 }
+
 REQUIRED = [
+    "README.md",
+    "START-HERE.md",
+    "LICENSE.md",
     "SKILL.md",
     "agents/openai.yaml",
     "personas/omnara-investigative-research-intelligence.md",
@@ -25,51 +30,125 @@ REQUIRED = [
     "references/synthesis-and-citation-audit.md",
     "references/tooling-cost-and-security.md",
     "references/campaign-operations.md",
+    "references/canonical/inquiry-engine-v1.md",
     "assets/campaign-vault/campaign.json",
+    "assets/campaign-vault/draft/.gitkeep",
     "schemas/research-campaign.schema.json",
     "scripts/research_campaign.py",
     "scripts/citation_audit.py",
     "scripts/assemble_report.py",
-    "evals/eval-manifest.yaml",
-    "evals/core-transfer-cases.yaml",
     "fallbacks/degraded-capability.md",
     "fallbacks/universal-copy-paste-workflow.md",
+    "docs/README.md",
+    "docs/PROMPT-RECIPES.md",
+    "docs/WORKFLOW.md",
+    "docs/CAMPAIGN-VAULT.md",
+    "docs/VALIDATION.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/SECURITY-AND-PRIVACY.md",
+    "docs/LIMITATIONS.md",
+    "docs/MAINTAINERS.md",
+    "verification/documentation-review.md",
 ]
+
+MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest().upper()
 
 
-def validate(root: Path) -> list[str]:
+def validate_json(path: Path) -> list[str]:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return [f"invalid JSON {path.as_posix()}: {exc}"]
+    if not isinstance(value, (dict, list)):
+        return [f"invalid JSON root {path.as_posix()}: expected object or array"]
+    return []
+
+
+def validate_jsonl(path: Path) -> list[str]:
+    errors: list[str] = []
+    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            value = json.loads(line)
+        except Exception as exc:
+            errors.append(f"invalid JSONL {path.as_posix()}:{line_number}: {exc}")
+            continue
+        if not isinstance(value, dict):
+            errors.append(
+                f"invalid JSONL {path.as_posix()}:{line_number}: expected object"
+            )
+    return errors
+
+
+def link_target(raw_target: str) -> str:
+    target = raw_target.strip()
+    if target.startswith("<") and ">" in target:
+        target = target[1 : target.index(">")]
+    elif " " in target:
+        target = target.split(" ", 1)[0]
+    return unquote(target.split("#", 1)[0])
+
+
+def validate_markdown_links(root: Path) -> tuple[list[str], int]:
+    errors: list[str] = []
+    checked = 0
+    for markdown in sorted(root.rglob("*.md")):
+        text = markdown.read_text(encoding="utf-8")
+        for match in MARKDOWN_LINK.finditer(text):
+            target = link_target(match.group(1))
+            if not target or target.startswith(("http://", "https://", "mailto:")):
+                continue
+            checked += 1
+            resolved = (markdown.parent / target).resolve()
+            try:
+                resolved.relative_to(root.resolve())
+            except ValueError:
+                errors.append(
+                    f"local Markdown link escapes package: {markdown.relative_to(root)} -> {target}"
+                )
+                continue
+            if resolved.is_dir():
+                continue
+            if not resolved.is_file():
+                errors.append(
+                    f"broken local Markdown link: {markdown.relative_to(root)} -> {target}"
+                )
+    return errors, checked
+
+
+def validate(root: Path) -> tuple[list[str], int]:
     errors: list[str] = []
     for relative in REQUIRED:
         if not (root / relative).is_file():
             errors.append(f"missing {relative}")
+
     for relative, expected in EXPECTED_HASHES.items():
         path = root / relative
         if path.is_file() and sha256(path) != expected:
             errors.append(f"canonical hash mismatch: {relative}")
-    for relative in [
-        "assets/campaign-vault/campaign.json",
-        "schemas/research-campaign.schema.json",
-        "evals/eval-manifest.yaml",
-        "evals/core-transfer-cases.yaml",
-    ]:
-        path = root / relative
-        if path.is_file():
-            try:
-                json.loads(path.read_text(encoding="utf-8"))
-            except Exception as exc:
-                errors.append(f"invalid JSON-compatible file {relative}: {exc}")
+
+    for path in sorted(root.rglob("*.json")):
+        errors.extend(validate_json(path))
+    for path in sorted(root.rglob("*.jsonl")):
+        errors.extend(validate_jsonl(path))
+
+    link_errors, link_count = validate_markdown_links(root)
+    errors.extend(link_errors)
+
     if any(path.name == "__pycache__" for path in root.rglob("*")):
         errors.append("package contains __pycache__")
-    return errors
+    return errors, link_count
 
 
 def main() -> int:
     root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
-    errors = validate(root)
+    root = root.resolve()
+    errors, link_count = validate(root)
     if errors:
         for error in errors:
             print(f"ERROR: {error}")
@@ -77,7 +156,8 @@ def main() -> int:
     files = sum(1 for path in root.rglob("*") if path.is_file())
     print(f"VALID: {root}")
     print(f"FILES: {files}")
-    print("CANONICAL_HASHES: 4 matched")
+    print(f"CANONICAL_HASHES: {len(EXPECTED_HASHES)} matched")
+    print(f"MARKDOWN_LINKS: {link_count} checked")
     return 0
 
 
