@@ -1,8 +1,12 @@
 # Omnara Deep Research
 
-**Research with a memory, not a mood.**
+![A central inquiry anchors an evidence cartography of coverage sectors, source trails, contradictions, claims, and a bounded report.](docs/assets/omnara-hero.png)
+
+> **Research with a memory, not a mood.**
 
 Omnara turns a consequential question into an inspectable research campaign. It keeps the inquiry, queries, sources, claims, contradictions, coverage, citations, and stopping decision separate so a polished report cannot quietly outrun its evidence.
+
+**[Open the project site →](https://stunspot.github.io/omnara-deep-research/)**
 
 Omnara is the deep-research skill shipped inside [Nova the Optimal AI](https://github.com/Stunspot/nova-the-optimal-ai-mind). This repository publishes that skill as a focused standalone source tree for inspection, reuse, and maintenance.
 
@@ -102,6 +106,8 @@ Read [Validation and evidence boundaries](docs/VALIDATION.md) before making read
 
 ## Documentation map
 
+- [Open the tailored project site](https://stunspot.github.io/omnara-deep-research/)
+- [Read the site source and evidence boundary](docs/SITE-SOURCE.md)
 - [Run a first campaign](START-HERE.md)
 - [Choose and shape prompts](docs/PROMPT-RECIPES.md)
 - [Understand the workflow](docs/WORKFLOW.md)
