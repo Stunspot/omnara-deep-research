@@ -2,34 +2,26 @@
 
 Omnara uses deterministic checks to prevent several common forms of evidence drift. Each check has a deliberately narrow claim.
 
-## Validate the standalone package
+## Validate the customer runtime
 
-From the repository root:
+Run this from the installed or extracted skill root: the directory that contains `SKILL.md` and `scripts/`. In the family kit, use `codex/omnara-deep-research/`.
 
-```shell
-python scripts/validate_release.py .
+```powershell
+python -B scripts\validate_release.py . --profile runtime
 ```
 
-A passing result confirms:
+A passing result confirms required runtime files are present, the retained canonical inquiry reference matches its recorded SHA-256, JSON and JSONL parse, local runtime links resolve, and no `__pycache__` directory is present. The output must say `PROFILE: runtime`.
 
-- required runtime and human-facing files are present;
-- the retained canonical inquiry reference matches its recorded SHA-256;
-- JSON files parse;
-- nonblank JSONL rows are JSON objects;
-- local Markdown links resolve;
-- no `__pycache__` directory is packaged.
+Maintainers validating the full public source repository may instead run `python -B scripts\validate_release.py . --profile source`. Source-only documentation and verification records are intentionally absent from the customer runtime.
 
-It does not confirm that a host discovered the skill, that a research campaign ran, that sources are accurate, or that documentation is accessible in every rendered format.
+Neither profile confirms host discovery, a completed research campaign, source accuracy, semantic citation support, rendered accessibility, or publication approval.
 
 ## Smoke-test campaign creation
 
-```shell
-python scripts/research_campaign.py init /tmp/omnara-smoke \
-  --title "Omnara smoke test" \
-  --query "Can the campaign template initialize and validate?" \
-  --tier focused
-python scripts/research_campaign.py validate /tmp/omnara-smoke
-python scripts/research_campaign.py summary /tmp/omnara-smoke
+```powershell
+python -B scripts\research_campaign.py init C:\path\to\omnara-smoke --title "Omnara smoke test" --query "Can the campaign template initialize and validate?" --tier focused
+python -B scripts/research_campaign.py validate C:\path\to\omnara-smoke
+python -B scripts/research_campaign.py summary C:\path\to\omnara-smoke
 ```
 
 Use a writable destination suitable for your operating system. Remove the smoke-test directory when finished.
@@ -37,15 +29,15 @@ Use a writable destination suitable for your operating system. Remove the smoke-
 Expected validation result:
 
 ```text
-VALID: /tmp/omnara-smoke
+VALID: C:\path\to\omnara-smoke
 ```
 
 This confirms initialization and internal counter consistency. It does not claim that the campaign contains research evidence.
 
 ## Validate a live campaign
 
-```shell
-python scripts/research_campaign.py validate path/to/campaign
+```powershell
+python -B scripts/research_campaign.py validate C:\path\to\campaign
 ```
 
 The validator checks:
@@ -61,8 +53,8 @@ The validator checks:
 
 ## Assemble a report
 
-```shell
-python scripts/assemble_report.py path/to/campaign
+```powershell
+python -B scripts/assemble_report.py C:\path\to\campaign
 ```
 
 The command concatenates `draft/*.md` in lexical filename order, writes `report.md`, and records word and page-estimate evidence in `report-metrics.json`.
@@ -71,8 +63,8 @@ The page figures are estimates at 300 and 500 words per page. They are not rende
 
 ## Check structural citation integrity
 
-```shell
-python scripts/citation_audit.py path/to/campaign
+```powershell
+python -B scripts/citation_audit.py C:\path\to\campaign
 ```
 
 A passing result confirms that:

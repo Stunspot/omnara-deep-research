@@ -4,16 +4,15 @@ The campaign vault is Omnara's durable research memory. Copy or initialize one v
 
 ## Create a vault
 
-From the repository root:
+Run the command from the installed or extracted skill root: the directory that contains `SKILL.md` and `scripts/`. In the family kit, the directly executable copy is `codex/omnara-deep-research/`.
 
-```shell
-python scripts/research_campaign.py init campaigns/example \
-  --title "Example campaign" \
-  --query "The user's inquiry, preserved verbatim" \
-  --tier focused
+```powershell
+python -B scripts\research_campaign.py init C:\path\to\campaigns\example --title "Example campaign" --query "The user's inquiry, preserved verbatim" --tier focused
 ```
 
-The destination must be absent or empty. Supported tiers are `focused`, `deep`, and `exhaustive`. The tier is a planning posture, not proof that a particular depth was achieved.
+Expected result: the command creates the vault and reports its path. The destination must be absent or empty. Supported tiers are `focused`, `deep`, and `exhaustive`; a tier is a planning posture, not proof that the promised depth was achieved.
+
+A Claude-compatible host may not expose Python or a writable filesystem. In that case, use the bundled copy-paste fallback, retain the same vault fields in a safe workspace, and label deterministic validation unexecuted.
 
 ## File map
 
