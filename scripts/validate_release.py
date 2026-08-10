@@ -3,10 +3,10 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
-import sys
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -16,7 +16,7 @@ EXPECTED_HASHES = {
     ),
 }
 
-REQUIRED = [
+SOURCE_REQUIRED = [
     "README.md",
     "START-HERE.md",
     "LICENSE.md",
@@ -49,6 +49,30 @@ REQUIRED = [
     "docs/LIMITATIONS.md",
     "docs/MAINTAINERS.md",
     "verification/documentation-review.md",
+]
+
+RUNTIME_REQUIRED = [
+    "LICENSE.md",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "personas/omnara-investigative-research-intelligence.md",
+    "knowledge/source-navigation.md",
+    "references/operating-doctrine.md",
+    "references/search-cartography.md",
+    "references/evidence-and-investigation.md",
+    "references/synthesis-and-citation-audit.md",
+    "references/tooling-cost-and-security.md",
+    "references/campaign-operations.md",
+    "references/canonical/inquiry-engine-v1.md",
+    "assets/campaign-vault/campaign.json",
+    "assets/campaign-vault/draft/.gitkeep",
+    "schemas/research-campaign.schema.json",
+    "scripts/research_campaign.py",
+    "scripts/citation_audit.py",
+    "scripts/assemble_report.py",
+    "scripts/validate_release.py",
+    "fallbacks/degraded-capability.md",
+    "fallbacks/universal-copy-paste-workflow.md",
 ]
 
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
@@ -121,9 +145,12 @@ def validate_markdown_links(root: Path) -> tuple[list[str], int]:
     return errors, checked
 
 
-def validate(root: Path) -> tuple[list[str], int]:
+def validate(root: Path, profile: str = "auto") -> tuple[list[str], int, str]:
+    if profile == "auto":
+        profile = "source" if (root / "README.md").is_file() and (root / "docs").is_dir() else "runtime"
+    required = SOURCE_REQUIRED if profile == "source" else RUNTIME_REQUIRED
     errors: list[str] = []
-    for relative in REQUIRED:
+    for relative in required:
         if not (root / relative).is_file():
             errors.append(f"missing {relative}")
 
@@ -142,19 +169,23 @@ def validate(root: Path) -> tuple[list[str], int]:
 
     if any(path.name == "__pycache__" for path in root.rglob("*")):
         errors.append("package contains __pycache__")
-    return errors, link_count
+    return errors, link_count, profile
 
 
-def main() -> int:
-    root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
-    root = root.resolve()
-    errors, link_count = validate(root)
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("root", nargs="?", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--profile", choices=("auto", "source", "runtime"), default="auto")
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+    errors, link_count, profile = validate(root, args.profile)
     if errors:
         for error in errors:
             print(f"ERROR: {error}")
         return 1
     files = sum(1 for path in root.rglob("*") if path.is_file())
     print(f"VALID: {root}")
+    print(f"PROFILE: {profile}")
     print(f"FILES: {files}")
     print(f"CANONICAL_HASHES: {len(EXPECTED_HASHES)} matched")
     print(f"MARKDOWN_LINKS: {link_count} checked")
