@@ -23,7 +23,7 @@ This is the primary integrated route.
 4. Review and approve the exact local actions.
 5. Follow the [current manual Codex instructions](https://github.com/Stunspot/nova-the-optimal-ai-mind/blob/main/docs/INSTALL-CODEX.md) if attachment installation is unavailable.
 6. Start a new task so Codex can discover the installed skills.
-7. Verify Omnara using the discovery and invocation probes below.
+7. Verify Omnara using [Verify discovery](#verify-discovery) and [Verify invocation](#verify-invocation).
 
 The Nova package has its own Python, Ollama, hook, and MIND database requirements. Those are requirements of the integrated runtime, not of Omnara's research doctrine.
 
@@ -33,7 +33,7 @@ The Nova package has its own Python, Ollama, hook, and MIND database requirement
 2. Upload the ZIP through the host's skill-management interface.
 3. Enable the skill if enablement is a separate step.
 4. Start a new conversation so the host can refresh discovery.
-5. Run the discovery and invocation probes below.
+5. Run [Verify discovery](#verify-discovery) and [Verify invocation](#verify-invocation).
 
 This route provides the individual skill contents. It does not establish Nova's shared MIND database, prompt hook, automatic capability reminders, or identical behavior across Claude-compatible hosts.
 
