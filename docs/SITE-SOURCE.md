@@ -1,30 +1,31 @@
 # Omnara Deep Research site source
 
-The static project site is published from this `docs/` directory.
+The static project site is published from this docs directory.
 
 ## Source and evidence boundary
 
-The site describes the public contest edition and complete skill source tree in this repository. Its product claims are derived from:
+The site describes the standalone public edition and complete skill source tree in this repository. Product claims are derived from SKILL.md, START-HERE.md, the maintained references, the customer documentation, the reusable campaign-vault template, and the local helpers.
 
-- `SKILL.md`;
-- `START-HERE.md`;
-- `references/operating-doctrine.md` and the specialized campaign references;
-- `docs/WORKFLOW.md`, `docs/CAMPAIGN-VAULT.md`, and `docs/VALIDATION.md`;
-- the reusable campaign-vault template and included deterministic helpers.
+The site does not claim that structural citation checks establish semantic entailment, source count proves understanding, a fixed page count or source quota is guaranteed, every source is accessible, all hosts activate the skill identically, or this repository is a universal marketplace plugin.
 
-The page does not claim that structural citation checks establish semantic entailment, that source count proves understanding, that a page-count target is guaranteed before the campaign earns it, that all hosts activate the skill identically, or that this repository is a standalone marketplace plugin.
+## Visitor routes
 
-## Files
-
-- `index.html` — semantic single-page project overview;
-- `style.css` — responsive presentation and accessibility treatment;
-- `assets/omnara-hero.png` — generated 1600×900 raster hero artwork;
-- `.nojekyll` — direct static-file serving marker.
+- index.html - product orientation, users, problems, campaign loop, inputs, outputs, and boundaries;
+- install.html - Codex, Claude-compatible, other-host, and copy/paste routes plus discovery and invocation probes;
+- workflows.html - first campaign, realistic examples, campaign artifacts, assembly, and audit;
+- trust.html - privacy, storage, network, security, validation states, evidence, provenance, and license;
+- support.html - troubleshooting, checkpoints, update, removal, cleanup, support, and contribution;
+- 404.html - a useful recovery route for missing pages;
+- style.css - shared responsive presentation, keyboard focus, contrast, and reduced-motion treatment;
+- assets/omnara-pages-hero.png - 1200 x 800 Pages hero;
+- assets/omnara-social-card.png - 1200 x 630 social card with exact product title and identifying line;
+- assets/omnara-readme-hero.png - 1600 x 720 repository hero, served for direct asset access;
+- .nojekyll - direct static-file serving marker.
 
 ## Deployment
 
-`.github/workflows/deploy-pages.yml` uploads this directory with GitHub's official Pages Actions. Repository Pages must be configured to use **GitHub Actions** before the first deployment can publish.
+.github/workflows/deploy-pages.yml uploads this directory with GitHub's official Pages Actions. Repository Pages must use GitHub Actions. Publication is complete only after the workflow succeeds and every live route, link, and asset is rechecked against the final commit.
 
-## Review notes
+## Accessibility boundary
 
-The page uses one H1, semantic landmarks, a skip link, visible keyboard focus, descriptive links, meaningful alternative text, responsive layout, and reduced-motion handling. The visible coverage matrix is explicitly labeled illustrative. These checks support structural accessibility only; they are not a claim of formal accessibility conformance, research quality, citation entailment, host activation, or representative-user success.
+Every page uses one H1, semantic landmarks, a skip link, persistent labeled navigation, visible focus, descriptive links, meaningful alternative text where images convey meaning, responsive layouts that retain navigation, and reduced-motion handling. The final accessibility receipt records the exact reviewed fingerprint. That review does not establish universal WCAG conformance, every assistive-technology combination, representative-user success, or legal compliance.
