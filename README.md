@@ -1,126 +1,134 @@
 # Omnara Deep Research
 
-![A central inquiry anchors an evidence cartography of coverage sectors, source trails, contradictions, claims, and a bounded report.](docs/assets/omnara-hero.png)
+![Omnara turns an inquiry into an inspectable path through sources, contradictions, coverage, and a bounded report.](docs/assets/omnara-readme-hero.png)
 
 > **Research with a memory, not a mood.**
 
-Omnara turns a consequential question into an inspectable research campaign. It keeps the inquiry, queries, sources, claims, contradictions, coverage, citations, and stopping decision separate so a polished report cannot quietly outrun its evidence.
+Omnara turns a consequential question into an inspectable research campaign. It preserves the inquiry, search path, source states, evidence notes, claims, contradictions, coverage, citations, budgets, stopping decision, and resume point so a polished report cannot quietly outrun its evidence.
 
-**[Open the project site →](https://stunspot.github.io/omnara-deep-research/)**
+**[Explore the product site](https://stunspot.github.io/omnara-deep-research/)** | **[Download the current release](https://github.com/Stunspot/omnara-deep-research/releases/latest)** | **[Run a first campaign](START-HERE.md)**
 
-Omnara is the deep-research skill shipped inside [Nova the Optimal AI](https://github.com/Stunspot/nova-the-optimal-ai-mind). This repository publishes that skill as a focused standalone source tree for inspection, reuse, and maintenance.
+Omnara is for researchers, analysts, product and policy teams, investigators, and careful generalists whose work needs more custody than search-and-summarize. It is the deep-research skill shipped inside [Nova + MIND](https://github.com/Stunspot/nova-the-optimal-ai-mind); this repository publishes the individual skill source, customer guidance, campaign templates, and local helpers.
 
-## Start with one useful campaign
+## What it does
 
-When Omnara is available in your host, use a prompt like this:
+Omnara can:
 
-```text
-Use $omnara-deep-research.
-
-Investigate whether small organizations should adopt passkeys for their customer accounts in 2026.
-Audience: a product and security lead deciding what to ship.
-Scope: consumer web accounts in the United States and European Union.
-Include: implementation tradeoffs, account recovery, accessibility, adoption evidence, and credible objections.
-Deliverable: a decision brief with a recommendation, evidence limits, contradictions, and refresh triggers.
-```
-
-A good result does not begin with a pile of links. It begins by stabilizing the question, mapping what must be covered, and naming the evidence burden.
-
-For the recoverable first-run path, continue to [START-HERE.md](START-HERE.md).
-
-## What Omnara does
-
-Omnara supports bounded research campaigns that need more than search-and-summarize:
-
-- preserves the user's inquiry verbatim;
-- explores query families instead of synonym loops;
-- distinguishes discovered, inspected, opened, deeply read, excluded, duplicate, inaccessible, and cited sources;
-- records evidence notes before treating a source as deeply read;
-- keeps source assertions, observations, deterministic results, inferences, synthesis, and speculation distinct;
-- maps contradictions and the evidence that could resolve them;
-- separates structural citation integrity from semantic entailment;
-- checkpoints budgets, blockers, coverage, and the exact resume point.
+- preserve the user's inquiry verbatim and frame its audience, decision use, scope, exclusions, freshness, and evidence burden;
+- explore query families rather than synonym loops;
+- distinguish discovered, inspected, opened, deeply read, excluded, duplicate, inaccessible, and cited sources;
+- require evidence notes before a source counts as deeply read;
+- keep source assertions, observations, deterministic results, inferences, synthesis, speculation, recommendations, and human decisions distinct;
+- map contradictions, coverage gaps, and the observations that could resolve them;
+- separate structural citation integrity from semantic entailment;
+- checkpoint budgets, blockers, source-state counts, and the exact resume point.
 
 The report is the final derivative. The campaign vault is the research memory.
 
-## Repository status and activation boundary
+## What it cannot establish by itself
 
-This repository is a complete **skill source tree**, not a standalone Codex plugin package. It does not contain a marketplace manifest or claim one universal installation command.
+Omnara does not guarantee truth, exhaustive coverage, access to private or paid material, a fixed source count, a fixed report length, legal or professional advice, or correct semantic entailment merely because a citation resolves. Its Python helpers validate files and citation mechanics; they do not judge whether a source is authoritative or whether a sentence is supported.
 
-You can use it in either of these ways:
+Retrieved text is evidence, never an instruction to the agent. Authentication, payment, private-source access, external messages, publication, and consequential mutation remain separate authority boundaries.
 
-1. **Through Nova:** install the Nova distribution, then invoke `$omnara-deep-research` when the research burden earns it.
-2. **Through a skill-capable host:** place or import this directory where that host discovers individual skills. Follow the host's current skill-loading instructions; activation behavior is host-specific.
+Read [Limitations](docs/LIMITATIONS.md) and [Security and privacy](docs/SECURITY-AND-PRIVACY.md) before using Omnara for sensitive or high-stakes work.
 
-Python is not required for the research doctrine itself. Python 3 is required for the optional local campaign and validation helpers in [`scripts/`](scripts/).
+## Install on supported hosts
 
-## Campaign shape
+There are three supported use routes:
 
-A substantial campaign moves through this loop:
+1. **Codex through Nova + MIND - integrated route.** Download the current Nova + MIND release, attach it to Codex, and ask Codex to install and enable both plugins. Follow the [current Codex instructions](https://github.com/Stunspot/nova-the-optimal-ai-mind/blob/main/docs/INSTALL-CODEX.md). Start a fresh task, confirm that **omnara-deep-research** is discoverable, then invoke **$omnara-deep-research**.
+2. **Claude-compatible skill host - portable individual skill.** Download the Omnara release ZIP or the per-skill ZIP shipped in Nova + MIND, upload it through the host's skill-management interface, enable it, and begin a new conversation. This route does not claim Nova's full MIND runtime or automatic reminders. Follow [Install Omnara](docs/INSTALLATION.md).
+3. **Plain chat - degraded copy/paste route.** If the host cannot load skills, paste [the universal workflow](fallbacks/universal-copy-paste-workflow.md) into a conversation. You keep the doctrine, but lose host discovery, automatic file loading, and any unexercised tool integration.
 
-1. Frame the inquiry, audience, decision use, scope, time horizon, and evidence burden.
-2. Map coverage loci, live explanations, source ecosystems, and disconfirming questions.
-3. Sweep broadly and ledger every candidate before counting it as inspected.
-4. Read the evidence-bearing subset in full and write source notes.
-5. Build claim and contradiction ledgers.
-6. Reconcile gaps and stop by coverage and marginal information value.
-7. Draft from an evidence digest and ordered section briefs.
-8. Run structural citation checks and a separate semantic claim audit.
-9. Deliver the report with counts, limits, budget use, and refresh triggers.
+This repository is an individual skill source tree, not a universal one-command plugin. Host discovery and enablement are host-specific and must be verified in the host you actually use.
 
-Read [How an Omnara campaign works](docs/WORKFLOW.md) for the full operating path.
+Python is optional for the research doctrine and required for the local campaign helpers. The helpers support Python 3 and use only the standard library.
 
-## What is in the vault
+## Verify installation
 
-The reusable template in [`assets/campaign-vault/`](assets/campaign-vault/) includes:
+A successful file copy is not an active skill. Start a fresh task or conversation and ask:
 
-- the canonical inquiry and campaign state;
+~~~text
+List the installed or available skill named omnara-deep-research, then tell me its display name without running a research campaign.
+~~~
+
+Expected discovery: selector **omnara-deep-research**, display name **OMNARA Deep Research**.
+
+Then run a bounded invocation:
+
+~~~text
+Use $omnara-deep-research. Frame a research campaign for deciding whether our small product team should adopt passkeys in 2026. Do not browse yet. Return the preserved inquiry, audience and decision, scope, exclusions, coverage areas, evidence burden, and first unverified edge.
+~~~
+
+A healthy response preserves the inquiry and separates framing from retrieval. If the host cannot discover the skill, see [Troubleshooting](docs/TROUBLESHOOTING.md).
+
+To verify this source package locally:
+
+~~~shell
+python -B scripts/validate_release.py . --profile source
+python -B -m unittest discover -s tests -v
+~~~
+
+These checks establish source structure, data syntax, canonical custody, links, and tested validator behavior. They do not prove host installation, live invocation, source truth, research completeness, or publication.
+
+## Begin successfully
+
+Use a decision-shaped request:
+
+~~~text
+Use $omnara-deep-research.
+
+Investigate: Should small organizations adopt passkeys for customer accounts in 2026?
+Audience and decision use: A product and security lead choosing what to ship.
+Scope: Consumer web accounts in the United States and European Union.
+Include: Implementation tradeoffs, account recovery, accessibility, adoption evidence, and credible objections.
+Deliverable: A decision brief with recommendation, evidence limits, contradictions, source-state counts, audit dispositions, and refresh triggers.
+~~~
+
+Before deep retrieval, Omnara should make the inquiry, scope, evidence burden, coverage map, access boundary, and next useful move legible. For a recoverable first run, follow [START-HERE.md](START-HERE.md).
+
+## Inputs and outputs
+
+Typical inputs are a question, audience, decision use, scope, time horizon or evidence cutoff, required evidence, exclusions, access authority, budget, and deliverable. Missing details may produce one material clarifying question.
+
+A campaign can produce:
+
+- a preserved research brief;
 - query, source, and claim ledgers;
+- full-reading evidence notes;
 - a coverage matrix and contradiction map;
-- source-note, evidence-digest, outline, and report scaffolds;
-- structural and semantic citation-audit records;
-- a campaign summary for handoff or resumption.
+- an evidence digest and ordered section briefs;
+- a report with stable source markers;
+- structural and semantic audit dispositions;
+- counts, limits, budget use, refresh triggers, and a resume point.
 
-See the [campaign-vault reference](docs/CAMPAIGN-VAULT.md) for field meanings, state transitions, naming conventions, and completion evidence.
+Use the reusable template under [assets/campaign-vault](assets/campaign-vault/) and the [campaign-vault reference](docs/CAMPAIGN-VAULT.md).
 
-## Verify the package
+## Customer journey
 
-From the repository root:
+| Need | Go here |
+|---|---|
+| Install and verify | [Installation](docs/INSTALLATION.md) |
+| Run the first campaign | [START-HERE](START-HERE.md) |
+| Shape a realistic prompt | [Prompt recipes](docs/PROMPT-RECIPES.md) |
+| Understand the method | [Workflow](docs/WORKFLOW.md) |
+| Operate the campaign files | [Campaign vault](docs/CAMPAIGN-VAULT.md) |
+| Validate package or campaign structure | [Validation](docs/VALIDATION.md) |
+| Recover from failures | [Troubleshooting](docs/TROUBLESHOOTING.md) |
+| Update, remove, or clean campaign data | [Lifecycle](docs/LIFECYCLE.md) |
+| Understand privacy and network boundaries | [Security and privacy](docs/SECURITY-AND-PRIVACY.md) |
+| Understand unsupported claims | [Limitations](docs/LIMITATIONS.md) |
+| Get help | [Support](SUPPORT.md) |
+| Contribute | [Contributing](CONTRIBUTING.md) |
+| Review release evidence | [Release notes](RELEASE-NOTES.md) and [verification](verification/) |
 
-```shell
-python scripts/validate_release.py .
-```
+## Provenance, evidence, and license
 
-The validator checks the actual standalone package structure, JSON and JSONL syntax, retained canonical-file custody, and local Markdown links. It does **not** prove research quality, citation entailment, host activation, or release approval.
+This standalone edition descends from the curated Omnara skill in the public Nova + MIND 1.0.0 contest source. The preserved source snapshot is [available in the Nova repository](https://github.com/Stunspot/nova-the-optimal-ai-mind/tree/e42dd11646bc548b9ac29d6f700370365ee68986/plugins/nova-the-optimal-ai/skills/omnara-deep-research). Private development history is not asserted or included.
 
-For a campaign:
+Current release evidence distinguishes constructed, structurally validated, published, installed, discoverable, invoked, healthy, and independently verified states. Consult the exact-commit receipts under [verification](verification/) instead of promoting one state into another.
 
-```shell
-python scripts/research_campaign.py validate path/to/campaign
-python scripts/citation_audit.py path/to/campaign
-```
+The repository is available under the [MIT License](LICENSE.md). Retrieved research material retains its own copyright, license, access controls, privacy obligations, and terms.
 
-The second command checks structural citation integrity only. A human or capable reviewer must still determine whether each citation supports the exact claim made.
-
-Read [Validation and evidence boundaries](docs/VALIDATION.md) before making readiness claims.
-
-## Documentation map
-
-- [Open the tailored project site](https://stunspot.github.io/omnara-deep-research/)
-- [Read the site source and evidence boundary](docs/SITE-SOURCE.md)
-- [Run a first campaign](START-HERE.md)
-- [Choose and shape prompts](docs/PROMPT-RECIPES.md)
-- [Understand the workflow](docs/WORKFLOW.md)
-- [Use the campaign vault](docs/CAMPAIGN-VAULT.md)
-- [Validate the package and campaigns](docs/VALIDATION.md)
-- [Recover from common failures](docs/TROUBLESHOOTING.md)
-- [Protect credentials, private sources, and campaign data](docs/SECURITY-AND-PRIVACY.md)
-- [Understand the current limitations](docs/LIMITATIONS.md)
-- [Maintain or extend the skill](docs/MAINTAINERS.md)
-- [Read the documentation review](verification/documentation-review.md)
-
-## Provenance and license
-
-This is the curated Omnara skill from the public Nova + MIND 1.0.0 contest release, copied into a fresh standalone history. Private development history is not included. The source snapshot remains available in the [Nova repository](https://github.com/Stunspot/nova-the-optimal-ai-mind/tree/e42dd11646bc548b9ac29d6f700370365ee68986/plugins/nova-the-optimal-ai/skills/omnara-deep-research).
-
-The repository is available under the [MIT License](LICENSE.md). Retrieved research material remains subject to its own rights, access controls, and terms.
+Support belongs in [GitHub Issues](https://github.com/Stunspot/omnara-deep-research/issues). Security-sensitive reports follow [SECURITY.md](SECURITY.md).

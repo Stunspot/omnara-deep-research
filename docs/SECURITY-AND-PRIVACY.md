@@ -62,3 +62,9 @@ Their operation is still subject to the permissions of the user and host that ru
 ## External action boundary
 
 Research does not authorize publication, messaging, account changes, purchases, contact scraping, or uploads. Any externally mutating action remains a separate user decision and tool authorization.
+
+## Storage, network, and retention boundary
+
+Omnara itself has no telemetry client, account, background service, or automatic uploader. The local helpers use the filesystem only and make no network requests. Research performed by an agent may still use the host, model provider, browser, search services, repositories, APIs, or authenticated sessions that the user authorizes. Those systems may log prompts, queries, URLs, retrieved content, and outputs under their own policies.
+
+Campaign files remain wherever the user or host creates them. Omnara does not encrypt, synchronize, back up, expire, or erase them. Removal and cleanup are separate operations described in [Lifecycle](LIFECYCLE.md).

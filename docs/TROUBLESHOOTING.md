@@ -117,7 +117,7 @@ Rerun `citation_audit.py`. Then recheck semantic entailment for every claim affe
 - supplied-source analysis;
 - exact retrieval plan.
 
-Label unexecuted web work `PREPARED — NOT EXECUTED`. Do not claim source counts or negative findings from searches that did not run.
+Label unexecuted web work `PREPARED - NOT EXECUTED`. Do not claim source counts or negative findings from searches that did not run.
 
 ## A paid, private, or authenticated source is needed
 
