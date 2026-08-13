@@ -2,9 +2,9 @@
 
 ![Omnara turns an inquiry into an inspectable path through sources, contradictions, coverage, and a bounded report.](docs/assets/omnara-readme-hero.png)
 
-> **Research with a memory, not a mood.**
+> **Deep research that keeps the evidence attached.**
 
-Omnara turns a consequential question into an inspectable research campaign. It preserves the inquiry, search path, source states, evidence notes, claims, contradictions, coverage, citations, budgets, stopping decision, and resume point so a polished report cannot quietly outrun its evidence.
+Omnara does deep research: it turns a consequential question into a multi-source investigation and long-form, citation-audited report. The inspectable campaign underneath preserves the inquiry, search path, source states, evidence notes, claims, contradictions, coverage, budgets, stopping decision, and resume point so polished prose cannot quietly outrun its evidence.
 
 **[Explore the product site](https://stunspot.github.io/omnara-deep-research/)** | **[Download the current release](https://github.com/Stunspot/omnara-deep-research/releases/latest)** | **[Run a first campaign](START-HERE.md)**
 
