@@ -1,5 +1,16 @@
 # Release notes
 
+## 1.0.1 - reconciled current edition
+
+This maintenance release binds the current standalone source, post-1.0.0 product copy, live-publication evidence, and the historical 0.1.1 customer payload into one release lineage.
+
+- All 32 unchanged runtime files from the historical 0.1.1 customer skill remain byte-identical.
+- The release validator retains the later standalone improvements: source/runtime profiles, JSON and JSONL checks, local-link validation, and expanded package requirements.
+- The 1.0.0 public documentation, site, artwork, and post-release deep-research framing remain current.
+- Historical dual-host wrappers remain provenance evidence; they are not substituted for the reconciled standalone source tree.
+
+This release changes custody and presentation, not Omnara's research doctrine. Existing campaign data remains compatible. Host installation, discovery, invocation, and campaign quality remain separately observed states.
+
 ## 1.0.0 - standalone public edition
 
 This release publishes the curated Omnara Deep Research skill as a focused standalone source tree with:
