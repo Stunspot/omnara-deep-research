@@ -1,0 +1,40 @@
+{
+  "extractor": "Windows Expand-Archive",
+  "checks": [
+    {
+      "check": "native extraction exactly matches all 107 current source files",
+      "ok": true
+    },
+    {
+      "check": "packaged exact verifier",
+      "ok": true
+    },
+    {
+      "check": "native complete research imports current",
+      "ok": true
+    },
+    {
+      "check": "current qualified claim treatment available to UI",
+      "ok": true
+    },
+    {
+      "check": "native handoff shows actual inquiry",
+      "ok": true
+    },
+    {
+      "check": "native export is usable ZIP",
+      "ok": true
+    },
+    {
+      "check": "manifest detects changed customer guidance",
+      "ok": true
+    },
+    {
+      "check": "fresh extracted source rebuild is byte identical",
+      "ok": true
+    }
+  ],
+  "source_files": 107,
+  "zip_sha256": "0adf95d271eb32d541969a5addf19f27868e02208f39550978ae86be1d300908",
+  "limits": "Local extraction, source equality and exercised tasks; no live host install or semantic certification."
+}

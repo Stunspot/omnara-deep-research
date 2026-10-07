@@ -1,0 +1,576 @@
+{
+  "product": "omnara-deep-research",
+  "version": "1.3.0",
+  "treatment": "edit",
+  "status": "PASS",
+  "candidate": "E:\\Github\\omnara-deep-research\\release-candidates\\estate-quality-20261007-r2\\OMNARA Deep Research v1.3.0.zip",
+  "sha256": "5a0ab955ddee98d3fcf439c687c906470ddbd73830bb56e1eadfc5d12442eb0b",
+  "runtime_tree": {
+    "file_count": 107,
+    "tree_sha256": "25eb180608bac79dc3acd825fcedb7fc813029f1422f76f38f8ac4fbadf43766",
+    "files": [
+      {
+        "path": "CONTRIBUTING.md",
+        "bytes": 1203,
+        "sha256": "0ccbfd8b6b762d174064b7ec6d789dfebc2400b2634788e989b74fb874ca4084"
+      },
+      {
+        "path": "LICENSE.md",
+        "bytes": 1378,
+        "sha256": "2fca94eb398b7232ffef41f9cb0aaaca84afde2ce50a55bd1053acb73e85b10b"
+      },
+      {
+        "path": "Open.cmd",
+        "bytes": 171,
+        "sha256": "aa55ea1a9a003516fddf2ba47701b2ce1a8aaa7ace634b49658a97dae7eebc0e"
+      },
+      {
+        "path": "Open.command",
+        "bytes": 77,
+        "sha256": "6967b4d0ff9ed5293953ecd2d0fd073943dbbe90ce5dd5e86f38e848dfa014d2"
+      },
+      {
+        "path": "README.md",
+        "bytes": 3410,
+        "sha256": "5c4c927d6003390e35cae37ae39a3b29282d582850be54671632dd721f8176ac"
+      },
+      {
+        "path": "RELEASE-NOTES.md",
+        "bytes": 7332,
+        "sha256": "f50775a04a04309baf2c3d01f6c10bf8397fc69813f21710c5dc97f4d4fcd84c"
+      },
+      {
+        "path": "SECURITY.md",
+        "bytes": 1344,
+        "sha256": "7fc9ec35941abafd70a97db804096e1b792d5d8081f0e941ea2ebdebedc82739"
+      },
+      {
+        "path": "SKILL.md",
+        "bytes": 9084,
+        "sha256": "a518b088426e6e676e247f754d2b2d40d207dbea1e138bf2cfa3234570fcae21"
+      },
+      {
+        "path": "START-HERE.md",
+        "bytes": 3812,
+        "sha256": "7fe9ce3f4b82b98881f53704e19ecad33d27d4747ebe581bf4281082ad0f5d9a"
+      },
+      {
+        "path": "SUPPORT.md",
+        "bytes": 1007,
+        "sha256": "d239f876c19d69b353b5391ddecc9cd1ff617ecc4fa7cf80549847b0a8fa5195"
+      },
+      {
+        "path": "VERSION",
+        "bytes": 6,
+        "sha256": "64d23f858ef51b0f996e4966d4e27c0371b437e2d2787890b1f7ad22d4ec5663"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "bytes": 255,
+        "sha256": "83101cd935e2a64da42ddc4af3b823fc991547e68d2ecfa960f110d08d20308e"
+      },
+      {
+        "path": "assets/campaign-vault/campaign-summary.md",
+        "bytes": 407,
+        "sha256": "3bd588b5f6cc3c167d5d229d7cacb1698b005e5b303488e56ff8674fcf0445b8"
+      },
+      {
+        "path": "assets/campaign-vault/campaign.json",
+        "bytes": 788,
+        "sha256": "0d337fc232decd20ef739f364f0c216ee90d55d389b2e5224b09b2bb4f8f0d30"
+      },
+      {
+        "path": "assets/campaign-vault/citation-audit.md",
+        "bytes": 244,
+        "sha256": "8aa28f7b48dbf45f8d59a0fbd0d944ac13385dd83927d1dec1aea1e0362ddc7c"
+      },
+      {
+        "path": "assets/campaign-vault/claim-ledger.jsonl",
+        "bytes": 1,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "assets/campaign-vault/contradictions.md",
+        "bytes": 302,
+        "sha256": "bcf8de93c47d50b0effb7e0eba0e5fe63872abf180f2d01ac2a957829e2b7e11"
+      },
+      {
+        "path": "assets/campaign-vault/coverage-matrix.md",
+        "bytes": 247,
+        "sha256": "94a6e89cd4662d3d53cf8e06cdea40cd9b74bb9814111dccc080439e7415a3c8"
+      },
+      {
+        "path": "assets/campaign-vault/draft/.gitkeep",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "assets/campaign-vault/evidence-digest.md",
+        "bytes": 196,
+        "sha256": "5ee4c3e12ad1de6408759790dc620f22b7cbe1b66420799c08dbe698e0c6d812"
+      },
+      {
+        "path": "assets/campaign-vault/notes/SOURCE-NOTE-TEMPLATE.md",
+        "bytes": 760,
+        "sha256": "da1fd7272a317eeb2bda18f281fdabc78e31f11f0cac74f16397316290549532"
+      },
+      {
+        "path": "assets/campaign-vault/outline.md",
+        "bytes": 150,
+        "sha256": "27f1d8e2e6061c4128c543d50966d8ca813eb76cedb9ae08998c16f87d065c5c"
+      },
+      {
+        "path": "assets/campaign-vault/query-ledger.jsonl",
+        "bytes": 1,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "assets/campaign-vault/report.md",
+        "bytes": 48,
+        "sha256": "e6def10acf097f038201c525d14c0ecf93187372d532005fa981f45467684eaa"
+      },
+      {
+        "path": "assets/campaign-vault/research-brief.md",
+        "bytes": 723,
+        "sha256": "61b15df2d308d834bf9aef567047b9953d62b1a414551a5f8f362d7893c31a50"
+      },
+      {
+        "path": "assets/campaign-vault/source-ledger.jsonl",
+        "bytes": 1,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "assets/manuscript-plan.md",
+        "bytes": 1213,
+        "sha256": "ecd7e812f9ff4b0e34a11587965f0dfa4751cb6ab66548d6a7d762924edb8e3b"
+      },
+      {
+        "path": "docs/.nojekyll",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/404.html",
+        "bytes": 1119,
+        "sha256": "6a679dc20a37fcd3830ea9dcdd3deb2093b3bad7921186e89aba9f9441279bd6"
+      },
+      {
+        "path": "docs/CAMPAIGN-ROOM.md",
+        "bytes": 8880,
+        "sha256": "d1a47aaa15875d02419e2c3990da66906e569265c6b5863e9c728edeef783520"
+      },
+      {
+        "path": "docs/CAMPAIGN-VAULT.md",
+        "bytes": 3832,
+        "sha256": "2bc8ec4dc3521e1a6cbb8b4b119a2245be4c63cb50daa7b69f42ae00e73326dc"
+      },
+      {
+        "path": "docs/INSTALLATION.md",
+        "bytes": 2966,
+        "sha256": "9209c677194fbacb3bde10658e495ba1d547e54ed9552db30c28f699cbe3846e"
+      },
+      {
+        "path": "docs/LIFECYCLE.md",
+        "bytes": 2737,
+        "sha256": "fbd20ccbd712c0561b418dcad2a98b58497155b28642077ae263b68185f71813"
+      },
+      {
+        "path": "docs/LIMITATIONS.md",
+        "bytes": 2845,
+        "sha256": "739ba4bcffee81b37260bd1a57edecc07cb683efa1256be31882456c2b45cb6f"
+      },
+      {
+        "path": "docs/MAINTAINERS.md",
+        "bytes": 2722,
+        "sha256": "2cc41b8bac87b7e213e20638258d40e2301de3f9b3b17ea1e2e4296e602522a5"
+      },
+      {
+        "path": "docs/PROMPT-RECIPES.md",
+        "bytes": 3781,
+        "sha256": "ae08f24a4157620a5e268745d6f38474fc30c008683ac87d7c07ba7413885247"
+      },
+      {
+        "path": "docs/README.md",
+        "bytes": 1770,
+        "sha256": "7adb48f5b30d6d503b5d7af778867ac4b8e1be40f4f4b56b9bd7d151e3077fdd"
+      },
+      {
+        "path": "docs/SECURITY-AND-PRIVACY.md",
+        "bytes": 3761,
+        "sha256": "4af161d27adfb3fee8820c4d5a35ce5ca2f0ddd9818d0c922afa81d8844f7fb4"
+      },
+      {
+        "path": "docs/SITE-SOURCE.md",
+        "bytes": 2586,
+        "sha256": "95c7813b267496b9988845e7d9e1db89ebc8e6f13d6f8e1cc0a666c8a2369199"
+      },
+      {
+        "path": "docs/TROUBLESHOOTING.md",
+        "bytes": 3547,
+        "sha256": "ba2b0b18161febb91ed25620b1b23628ea62b42e068b4936c32cc9be8ad7f686"
+      },
+      {
+        "path": "docs/VALIDATION.md",
+        "bytes": 3368,
+        "sha256": "7ad972e5597ffe0d1414d57adb71b5b229fa45e4ac2f9b82326cb649d89385f2"
+      },
+      {
+        "path": "docs/WORKFLOW.md",
+        "bytes": 6989,
+        "sha256": "4e860386927a5d99db4051336598fb2dfafbb34beea7daf2890fc0497518269f"
+      },
+      {
+        "path": "docs/assets/omnara-pages-hero.png",
+        "bytes": 1360904,
+        "sha256": "351df35906ec321c9d69cdb8d772b2bd914138ab0955f99e6530d8bae898b615"
+      },
+      {
+        "path": "docs/assets/omnara-readme-hero.png",
+        "bytes": 1616718,
+        "sha256": "d018e1e1a8d388628f117ac2c174511c83f0a8d9d613cb5d422abc6e3a892392"
+      },
+      {
+        "path": "docs/assets/omnara-social-card.png",
+        "bytes": 983023,
+        "sha256": "18aede37df70582bd4d5fbe138b1c4cc251c4c63e2ddc13be822ca3143475b16"
+      },
+      {
+        "path": "docs/index.html",
+        "bytes": 6553,
+        "sha256": "834af242855c5bc94c4fe91343a26a0e06316213c13050c12d2cc04440328792"
+      },
+      {
+        "path": "docs/install.html",
+        "bytes": 4328,
+        "sha256": "50b812ccf338aab0ca15b995b8cfaa46e4950304c5f50b95f3efe7ca2f70222b"
+      },
+      {
+        "path": "docs/style.css",
+        "bytes": 5408,
+        "sha256": "62b2225e38f7e17909a03bba4ee56bfbcb1a6bdd6eb235ffdc8fa71ea53f91c2"
+      },
+      {
+        "path": "docs/support.html",
+        "bytes": 4582,
+        "sha256": "bc57252a56b9dca95d9196cc0de5362cdafe5fb56d32e56f259c4bbe581c4602"
+      },
+      {
+        "path": "docs/trust.html",
+        "bytes": 4993,
+        "sha256": "e573f20951c14a968226da08d7e1e0de9946ecf87575dd503762471ae5e4be59"
+      },
+      {
+        "path": "docs/workflows.html",
+        "bytes": 6112,
+        "sha256": "90e0c7b00965684ed9416b2dfb4acfc0be751707de2add7516b782222a031dfc"
+      },
+      {
+        "path": "examples/README.md",
+        "bytes": 1686,
+        "sha256": "e12dd58551cb8a44222be6400a41b6f8d1da543b1498a85ff409f4ca91d92a6a"
+      },
+      {
+        "path": "examples/sea-level-comparison/campaign-summary.md",
+        "bytes": 658,
+        "sha256": "0aed04ca5c64d57960b7122833febd23015305f4ddf9e2ff6c83ed35329645ca"
+      },
+      {
+        "path": "examples/sea-level-comparison/campaign.json",
+        "bytes": 1149,
+        "sha256": "7864052dfdc700410fea4b49cb2c5a81abc7d8ac2b51c59d6cb5ebc7ec896952"
+      },
+      {
+        "path": "examples/sea-level-comparison/citation-audit-structural.json",
+        "bytes": 467,
+        "sha256": "594f63ff47ca598d19980711f456c49fb7f4744d7ac6803290c532d8c92b0d8a"
+      },
+      {
+        "path": "examples/sea-level-comparison/citation-audit.md",
+        "bytes": 621,
+        "sha256": "60052917957e63aef174f804d3f0993f24ab5593e0b5b5a3f3ccceabd23926f0"
+      },
+      {
+        "path": "examples/sea-level-comparison/claim-ledger.jsonl",
+        "bytes": 1168,
+        "sha256": "897bb6bc1b11129eecc78b5d54f1d6200f203fa510ccd7da70e995f7943f1062"
+      },
+      {
+        "path": "examples/sea-level-comparison/contradictions.md",
+        "bytes": 443,
+        "sha256": "91ca58d8c43807a2b6d85ad6687f00f1179d2d03d17d30a30ec1fa9e25745b49"
+      },
+      {
+        "path": "examples/sea-level-comparison/coverage-matrix.md",
+        "bytes": 533,
+        "sha256": "dd33010ae03c54d7d71154b0137ba0db578259a21fb47544d30cd55cfffd9ba3"
+      },
+      {
+        "path": "examples/sea-level-comparison/draft/.gitkeep",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "examples/sea-level-comparison/draft/01-report.md",
+        "bytes": 2466,
+        "sha256": "f39fe249d3c97d93b32ffe7c23b7bfbdd539c5a4637561782a83a608a6c5c366"
+      },
+      {
+        "path": "examples/sea-level-comparison/evidence-digest.md",
+        "bytes": 346,
+        "sha256": "0ebfe3d1e740ad5e9955e211ff7bd725060e085cbe227da0989a3997aa06c48b"
+      },
+      {
+        "path": "examples/sea-level-comparison/notes/S001.md",
+        "bytes": 637,
+        "sha256": "5025b43c7eab7e9ca53a7502c8de3c9eaeecc65dfccad748436dc528c4967466"
+      },
+      {
+        "path": "examples/sea-level-comparison/notes/S002.md",
+        "bytes": 481,
+        "sha256": "9d01513f7b2382c0b6695ec16019510a1d57423d825467536fafbd0319ae49ca"
+      },
+      {
+        "path": "examples/sea-level-comparison/notes/S003.md",
+        "bytes": 508,
+        "sha256": "ee8e5ba71b979396463dc1459591fc7cf067f6298b1d81d1244b12c610d620c9"
+      },
+      {
+        "path": "examples/sea-level-comparison/notes/SOURCE-NOTE-TEMPLATE.md",
+        "bytes": 760,
+        "sha256": "da1fd7272a317eeb2bda18f281fdabc78e31f11f0cac74f16397316290549532"
+      },
+      {
+        "path": "examples/sea-level-comparison/outline.md",
+        "bytes": 292,
+        "sha256": "8ad73a889634e0ca2bcdd10d12fa75983e7b872a2948e1067a8ae6cdf656d537"
+      },
+      {
+        "path": "examples/sea-level-comparison/query-ledger.jsonl",
+        "bytes": 626,
+        "sha256": "06b8caaecdec28e02d2a90fa54489219143f14c6a98124d10f27e0ba37eced2d"
+      },
+      {
+        "path": "examples/sea-level-comparison/report.md",
+        "bytes": 2466,
+        "sha256": "f39fe249d3c97d93b32ffe7c23b7bfbdd539c5a4637561782a83a608a6c5c366"
+      },
+      {
+        "path": "examples/sea-level-comparison/research-brief.md",
+        "bytes": 923,
+        "sha256": "d168bb6a1c21d8db1f81a4354d8f6bdcf82e620482aee5be9aebec63200db641"
+      },
+      {
+        "path": "examples/sea-level-comparison/semantic-review.json",
+        "bytes": 1248,
+        "sha256": "9f3e67333ca34a8a52856cc1e2604ef325ad461550a1c55224a311d22d5c8c9d"
+      },
+      {
+        "path": "examples/sea-level-comparison/source-ledger.jsonl",
+        "bytes": 1848,
+        "sha256": "562c4bbfb50f3485afebeee1f4e1bacaf7f13e87bb45bfaffb2ef3a6ea96ad81"
+      },
+      {
+        "path": "fallbacks/degraded-capability.md",
+        "bytes": 1881,
+        "sha256": "8620ff4345b5ec6cd92b1312e8c48dc109496ca39d1df9df6fec87abcd2c958b"
+      },
+      {
+        "path": "fallbacks/universal-copy-paste-workflow.md",
+        "bytes": 2947,
+        "sha256": "07af3300bb4b8023e51c69803d26bb35276ddc8d95e388e0a0901e4451d6490f"
+      },
+      {
+        "path": "knowledge/source-navigation.md",
+        "bytes": 472,
+        "sha256": "44266ef86b073932c8eca8374403ab02b2bd473106bea82bf5b45753d469259a"
+      },
+      {
+        "path": "personas/omnara-investigative-research-intelligence.md",
+        "bytes": 2668,
+        "sha256": "8f4eec745c37d4dedc8253188fd882f345914a28d94425cfe5724db3a031989f"
+      },
+      {
+        "path": "references/campaign-operations.md",
+        "bytes": 2848,
+        "sha256": "63e7b74a5a94b9ae3be88329958d2fd1bae5d96b11e0ab6e9a4d965b67ee95ef"
+      },
+      {
+        "path": "references/canonical/inquiry-engine-v1.md",
+        "bytes": 2576,
+        "sha256": "351183c36a1d14b1fa28b1ddce9d0ad0437ecf627cff90150f4acbb02928afd0"
+      },
+      {
+        "path": "references/evidence-and-investigation.md",
+        "bytes": 2137,
+        "sha256": "55c65e4745160080b20101201eca6db8b346c068cfa8e4ed87eecedc53ffed02"
+      },
+      {
+        "path": "references/operating-doctrine.md",
+        "bytes": 1686,
+        "sha256": "2f3bc7e713537d08d7909cda54aeaf0c8cb47848eeb17037dfb944c30b771f80"
+      },
+      {
+        "path": "references/research-design-and-idea-development.md",
+        "bytes": 4952,
+        "sha256": "8b70fe4f2f7359b8c211f8a2145d126af948e210e41e6de811795f14c3ba7456"
+      },
+      {
+        "path": "references/research-to-manuscript.md",
+        "bytes": 7215,
+        "sha256": "3861f5ef59019a2b45e8c183c7461a7f8a30621e092082c8142b3b9fc4db9ad0"
+      },
+      {
+        "path": "references/review-contract.md",
+        "bytes": 3425,
+        "sha256": "97cc619239319ff719930feb4bd07af652e350f6d762c3a4d74146a2d34855c2"
+      },
+      {
+        "path": "references/search-cartography.md",
+        "bytes": 2229,
+        "sha256": "11f0d9fbe649f6e372bb2adc32b216012bca641f161dc9c04394fab8642406e7"
+      },
+      {
+        "path": "references/synthesis-and-citation-audit.md",
+        "bytes": 2875,
+        "sha256": "4affc03c01b6b0b68040bac5597cf83f9ff66dd74ce20e2f003a868fc43dbaa7"
+      },
+      {
+        "path": "references/tooling-cost-and-security.md",
+        "bytes": 1648,
+        "sha256": "29defbe80dc94f732f0ee5da00116d9fbf3517b29d28de44f767ae74dffa3807"
+      },
+      {
+        "path": "schemas/research-campaign.schema.json",
+        "bytes": 1960,
+        "sha256": "877d13825fe51483737b3b16a1057b31d74f9f1ba72556312535ff9bef6d21c8"
+      },
+      {
+        "path": "scripts/assemble_report.py",
+        "bytes": 2210,
+        "sha256": "237501b1af510b41575e3f15894f0fc7f7858ccb67477615950685a618a97b02"
+      },
+      {
+        "path": "scripts/build_workspace_release.py",
+        "bytes": 3934,
+        "sha256": "cb1da41be7b7a60e2e0faf1ca263e6f8dd4de8692cf1e5e16b610aa76d35aec9"
+      },
+      {
+        "path": "scripts/citation_audit.py",
+        "bytes": 4815,
+        "sha256": "63b2296c56e52ed9e48af4dbcc3602978ec0d2c4facbdbf9b999f21c1fc89aeb"
+      },
+      {
+        "path": "scripts/custody.py",
+        "bytes": 3288,
+        "sha256": "8185171de2a2344645527288994c0a207f4573da4404333a72f7de6afa43ada9"
+      },
+      {
+        "path": "scripts/evidence_contract.py",
+        "bytes": 8344,
+        "sha256": "ce949ef9247f6feb75451aaf6b616d75235ab6980f60297573ac82a5b9a37ab8"
+      },
+      {
+        "path": "scripts/file_ops.py",
+        "bytes": 577,
+        "sha256": "5784f1d4e3ac7ca9f3dfd7f7c8a68eecb9d708fe7fac0a25cdda94d54d86b82f"
+      },
+      {
+        "path": "scripts/product_files.py",
+        "bytes": 1210,
+        "sha256": "40fb00604ea41c91cc335206d8d500aadcccf34604ece457123e839604876cb9"
+      },
+      {
+        "path": "scripts/research_campaign.py",
+        "bytes": 12969,
+        "sha256": "a1e9b9ecc981f256c0d3fbf6dc85ccc434b9102b53b8c750987766e8cdb517e4"
+      },
+      {
+        "path": "scripts/validate_release.py",
+        "bytes": 6003,
+        "sha256": "a538be421edb1cabeccd11da3f53bb1c8a2be41bce0d9733d50ebb529db3bd46"
+      },
+      {
+        "path": "verification/documentation-review.md",
+        "bytes": 1205,
+        "sha256": "71e584fdda720524451abfd6ea9eabdbda39d4c21fd4580f87bfbb61ed5b353c"
+      },
+      {
+        "path": "workspace/app.js",
+        "bytes": 45094,
+        "sha256": "6294b70f9a33c82d75f7d1e4e5a99f5c95d4650e7818b68da8eb49f032f65de5"
+      },
+      {
+        "path": "workspace/assets/proof-cabinet.png",
+        "bytes": 1672477,
+        "sha256": "40690979b978967df0c0901d90dae6032c08e48a10889e3308ae918d0d8fabb0"
+      },
+      {
+        "path": "workspace/assets/survey-folio.png",
+        "bytes": 2645228,
+        "sha256": "a9bce50fa29537f38cbc5854531e343f753340c5a08af442a400e7e8a586479a"
+      },
+      {
+        "path": "workspace/assets/tracework.png",
+        "bytes": 1793992,
+        "sha256": "66e3f094daae304919093c6a886f76cbc7b547759ac1c52a45594149fdade7bd"
+      },
+      {
+        "path": "workspace/campaign.py",
+        "bytes": 8923,
+        "sha256": "299cda4be058da03a62277256217cdac5d4650722b1458e1fa968e0d8935e507"
+      },
+      {
+        "path": "workspace/index.html",
+        "bytes": 6175,
+        "sha256": "1ec2f6ecc995f3ebf23225d4f2c1fe81b20c5c5fbf0ce272d8aa30e75f44539e"
+      },
+      {
+        "path": "workspace/open.py",
+        "bytes": 294,
+        "sha256": "ab0c0c2e2ec3251626cd9d3e3aedb4df954a7b0f63b9b4cf29f40577888ddee5"
+      },
+      {
+        "path": "workspace/runtime.py",
+        "bytes": 7182,
+        "sha256": "6a2f76542bb44cdc95a88d6e96d5d816a4fe2e2e0e4bafda0a6463713372e9cb"
+      },
+      {
+        "path": "workspace/skins.css",
+        "bytes": 20093,
+        "sha256": "552cb8a922b1e91ee7595c79cd529933ace67231b09ed086329fa58fcf9b944b"
+      },
+      {
+        "path": "workspace/style.css",
+        "bytes": 49946,
+        "sha256": "d6bb9533be501880ae5e6a2a5dd8a61cb9a382e28bedcb87324943ccd1567a59"
+      }
+    ]
+  },
+  "actual_cli_controls": 18,
+  "python_tests": 46,
+  "actual_edge_checks": 18,
+  "authored_documents_unchanged": 38,
+  "native_windows_extraction": "PASS",
+  "extracted_source_rebuild_sha256": "5a0ab955ddee98d3fcf439c687c906470ddbd73830bb56e1eadfc5d12442eb0b",
+  "r1_to_r2_changed_zip_members": [
+    "omnara-deep-research/PACKAGE-CONTENTS.json",
+    "omnara-deep-research/scripts/evidence_contract.py",
+    "omnara-deep-research/scripts/research_campaign.py"
+  ],
+  "consumers": [
+    {
+      "edition": "free",
+      "path": "E:\\Github\\nova-the-optimal-ai-mind\\plugins\\nova-the-optimal-ai\\skills\\omnara-deep-research",
+      "files": 107,
+      "sha256": "25eb180608bac79dc3acd825fcedb7fc813029f1422f76f38f8ac4fbadf43766"
+    },
+    {
+      "edition": "emergent",
+      "path": "E:\\Github\\nova-emergent-source\\source\\component-updates\\omnara-deep-research",
+      "files": 107,
+      "sha256": "25eb180608bac79dc3acd825fcedb7fc813029f1422f76f38f8ac4fbadf43766"
+    }
+  ],
+  "precedence": "build.ps1 applies retained maintained-skill history first, then current component owner; no subsequent Omnara visual/verified/shared replacement. Final editions remain pending.",
+  "boundary": "Review binding is evidence custody, not semantic truth or reviewer authentication. No model trial, AT conformance or representative user study claimed."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "omnara-deep-research",
+  "version": "1.3.0",
+  "bundle_fingerprint": "sha256:c9d6383e5553746a3fb0fed93c87aa14462bd86355e5be78779dcd8565f4a306",
+  "zip_sha256": "5a0ab955ddee98d3fcf439c687c906470ddbd73830bb56e1eadfc5d12442eb0b",
+  "release_decision": {
+    "schema": "cd-release-decision/v1",
+    "kind": "edit",
+    "effect": "restored_behavior",
+    "baseline_version": "1.3.0",
+    "baseline_bundle_fingerprint": "sha256:329bf4040e3016492303cc2349a7f6b29666b45fef526a4039b78b7cd66365d5",
+    "target_version": "1.3.0",
+    "target_bundle_fingerprint": "sha256:c9d6383e5553746a3fb0fed93c87aa14462bd86355e5be78779dcd8565f4a306",
+    "reason": "Restore inspectable, resumable research: current content-bound declared review, readable source links, trustworthy lifecycle state, safe native save/export/assembly, usable first task and return, exact chronology and finite budgets.19findings repaired;18independentCLI controls,46tests,18actualEdge checks; no new research domain, autonomous retrieval, host or publication promise.",
+    "evidence": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\omnara-deep-research\\root-acceptance.json",
+    "reviewed_at": "2026-10-07T05:24:53.4006235+00:00"
+  },
+  "retained_baseline": "E:\\Indranet\\Augment-Custody\\Active Shelf Control\\superseded\\estate-omnara-deep-research-20261007T052453410Z",
+  "shelf_hashes": "verified",
+  "kanban": "pending_sync",
+  "applicable_installations": "separate_readback",
+  "public_upload": "not_implied"
+}

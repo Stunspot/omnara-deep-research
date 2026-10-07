@@ -1,0 +1,105 @@
+{
+  "product_id": "omnara-deep-research",
+  "title": "OMNARA Deep Research",
+  "version": "1.3.0",
+  "state": "independently_accepted_r2_both_source_consumers_current_shelf_remote_final_editions_pending",
+  "release_treatment": "edit",
+  "classification_reason": "Restore existing inspectable, resumable, evidence-bounded campaign and complete local-room package promise. Add only enforcement and examples required to make accepted review, citation, custody, navigation and documentation claims truthful; no new research domain, host, autonomous retrieval, rendering output or publication promise. Existing campaign v1 remains readable; old review fields retained as historical and require actual review before current completion.",
+  "repository": "E:\\Github\\omnara-deep-research",
+  "baseline_git_head": "48b7b231ea91851bcd48a494240436044bc9c202",
+  "baseline_zip_sha256": "713e4885f8db656b8894775f30fb08cfd9d114d60f5be5782f06052772de07c6",
+  "candidate": {
+    "path": "E:\\Github\\omnara-deep-research\\release-candidates\\estate-quality-20261007-r2\\OMNARA Deep Research v1.3.0.zip",
+    "sha256": "5a0ab955ddee98d3fcf439c687c906470ddbd73830bb56e1eadfc5d12442eb0b",
+    "bytes": 10190971,
+    "build_receipt": "E:\\Github\\omnara-deep-research\\release-candidates\\estate-quality-20261007-r2\\build-receipt.json"
+  },
+  "sidecars": {
+    "prompt": {
+      "path": "E:\\Github\\omnara-deep-research\\delivery-sidecars\\OMNARA Deep Research T-Free v1.3.0.md",
+      "sha256": "e89975db6eb8cc694ec5d77ba2f9ec3b8348ac698bd4e88036e9750efd0f61f0",
+      "bytes": 3155
+    },
+    "extra": {
+      "path": "E:\\Github\\omnara-deep-research\\delivery-sidecars\\OMNARA Deep Research T-Free v1.3.0 Extra.md",
+      "sha256": "8de033605b4cf61051ebb18c25659f23d196f01c449fce7992d921843e7bc4d1",
+      "bytes": 4733
+    },
+    "avatar": {
+      "path": "E:\\Github\\omnara-deep-research\\delivery-sidecars\\OMNARA Deep Research.png",
+      "sha256": "8e9a4e773e3a5e2987b5a9cc2e0aa2557f408584022dcbe70f370f1c1898b3e0",
+      "bytes": 3233014
+    }
+  },
+  "source_freeze": {
+    "path": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\SOURCE-FREEZE.json",
+    "sha256": "0b705024060aecf3eabe9427a80587dfce3ad82b3450aabd7a68f3b97d77224d",
+    "bytes": 24775,
+    "files": 120
+  },
+  "authorship": {
+    "path": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\authorship-final\\documentation-authorship.json",
+    "sha256": "4f1d5cd42a19ec4eb47f99149bb2efb894238e8d0fa9d6f7491aa711eb19998a",
+    "bytes": 8543,
+    "documents": 38,
+    "mode": "in-process materially-revised; no independent authorship/reviewer claim"
+  },
+  "verification": {
+    "results": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\results.json",
+    "python_tests": 46,
+    "javascript_syntax": "passed",
+    "javascript_projection": "passed",
+    "browser_results": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\browser-evidence-r3\\results.json",
+    "actual_edge_checks": 18,
+    "native_results": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\native-results.json",
+    "native_checks": 8,
+    "native_windows_extraction": "passed",
+    "deterministic_rebuild": "two source builds and extracted-source rebuild byte-identical",
+    "release_files": 108,
+    "runtime_files": 107,
+    "local_links": 151,
+    "hesperos_main_docs_lint": 9,
+    "extra_preflight": "Assert-EstateExtra passed",
+    "git_text_parity": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\git-text-parity.json",
+    "real_research": "E:\\Github\\omnara-deep-research\\examples\\sea-level-comparison",
+    "independent_model_trials": 0,
+    "independent_cli_controls": 18
+  },
+  "consumer_delta": {
+    "edition_ids": [
+      "nova-free",
+      "nova-emergent"
+    ],
+    "canonical_runtime": "E:\\Github\\omnara-deep-research",
+    "runtime_files": 107,
+    "runtime_fingerprint": "25eb180608bac79dc3acd825fcedb7fc813029f1422f76f38f8ac4fbadf43766",
+    "fingerprint_algorithm": "SHA256 of sorted relative UTF-8 path + NUL + raw SHA256 digest per file",
+    "free_target": "E:/Github/nova-the-optimal-ai-mind/plugins/nova-the-optimal-ai/skills/omnara-deep-research",
+    "emergent_target": "E:/Github/nova-emergent-source/source/component-updates/omnara-deep-research",
+    "exact_instructions": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\product-audit\\consumer-handoff.md",
+    "legacy_review": "Native v1 readable; unbound older verdict retained historically. Completion requires actual current review, never invented migration approval.",
+    "builder_change": "--output must name new directory; accepted/historical destinations not overwritten by this worker."
+  },
+  "reports": {
+    "staged_root": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\omnara-deep-research",
+    "critique": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\product-audit\\critique.md",
+    "findings": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\product-audit\\findings.json",
+    "repair_log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\product-audit\\repair-log.md",
+    "expert_review": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\product-audit\\expert-task-review.md",
+    "release_decision": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\product-audit\\release-decision.json"
+  },
+  "root_next_actions": [
+    "Independently challenge exact candidate, current review subject and actual UI/source custody.",
+    "Reconcile staged audit into shared records and promote accepted canonical/release/docs through existing routes.",
+    "Integrate full consumer inventory with correct precedence and required manifests; do not rerun stale multi-product helper.",
+    "Deliver complete shelf/Library/Kanban bundle and applicable installations after exact acceptance."
+  ],
+  "limitations": [
+    "Content binding cannot authenticate source truth, reviewer identity or semantic quality.",
+    "No participant study, AT conformance, macOS host execution, live host activation or executed model trial claimed.",
+    "Source URLs remain live references; native export omits external originals/media/history by declared contract.",
+    "Concurrent external writers require coordination; no distributed transaction guarantee.",
+    "Independent acceptance and root-owned central/live delivery remain pending."
+  ],
+  "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\omnara-deep-research\\root-acceptance.json"
+}

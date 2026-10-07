@@ -1,0 +1,32 @@
+[
+  {
+    "check": "python-tests",
+    "exit_code": 0,
+    "log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\python-tests.txt"
+  },
+  {
+    "check": "javascript-syntax",
+    "exit_code": 0,
+    "log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\javascript-syntax.txt"
+  },
+  {
+    "check": "javascript-projection",
+    "exit_code": 0,
+    "log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\javascript-projection.txt"
+  },
+  {
+    "check": "source-validator",
+    "exit_code": 0,
+    "log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\source-validator.txt"
+  },
+  {
+    "check": "example-validator",
+    "exit_code": 0,
+    "log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\example-validator.txt"
+  },
+  {
+    "check": "git-diff-check",
+    "exit_code": 0,
+    "log": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\final-checks\\git-diff-check.txt"
+  }
+]

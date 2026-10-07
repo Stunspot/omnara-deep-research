@@ -1,0 +1,20 @@
+[
+  {
+    "name": "review-before-access-same-day",
+    "exit": 0,
+    "stdout": "VALID structure and declared review boundary: E:\\Temp\\root-omnara-r1\\review-before-access-same-day\r\n",
+    "fixture": "E:\\Temp\\root-omnara-r1\\review-before-access-same-day"
+  },
+  {
+    "name": "valid-cross-zone-order",
+    "exit": 1,
+    "stdout": "ERROR: complete campaign: semantic review predates recorded source access\r\n",
+    "fixture": "E:\\Temp\\root-omnara-r1\\valid-cross-zone-order"
+  },
+  {
+    "name": "unknown-review-offset",
+    "exit": 0,
+    "stdout": "VALID structure and declared review boundary: E:\\Temp\\root-omnara-r1\\unknown-review-offset\r\n",
+    "fixture": "E:\\Temp\\root-omnara-r1\\unknown-review-offset"
+  }
+]

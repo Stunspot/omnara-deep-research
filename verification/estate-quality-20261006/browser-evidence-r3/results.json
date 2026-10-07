@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "name": "first inquiry visible",
+      "ok": true
+    },
+    {
+      "name": "library return",
+      "ok": true
+    },
+    {
+      "name": "imported review current",
+      "ok": true
+    },
+    {
+      "name": "empty source filter hides prior note",
+      "ok": true
+    },
+    {
+      "name": "actual side-by-side notes",
+      "ok": true
+    },
+    {
+      "name": "related claim clears incompatible atlas filter",
+      "ok": true
+    },
+    {
+      "name": "visible bibliography",
+      "ok": true
+    },
+    {
+      "name": "tracework narrow reading no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "surveyfolio narrow reading no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "proofcabinet narrow reading no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "unsaved note visibly invalidates review",
+      "ok": true
+    },
+    {
+      "name": "old complete review cannot save changed evidence",
+      "ok": true
+    },
+    {
+      "name": "working copy saves without forged review",
+      "ok": true
+    },
+    {
+      "name": "external edit conflict preserved",
+      "ok": true
+    },
+    {
+      "name": "draft recovery downloadable",
+      "ok": true
+    },
+    {
+      "name": "damaged record repair route",
+      "ok": true
+    },
+    {
+      "name": "damaged record does not borrow previous title",
+      "ok": true
+    },
+    {
+      "name": "no uncaught browser errors",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "scope": "Actual isolated local Edge UI; no participant study, AT or other-host claim."
+}

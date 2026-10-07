@@ -1,0 +1,13 @@
+{
+  "product": "omnara-deep-research",
+  "baseline_version": "1.3.0",
+  "baseline_zip_sha256": "713e4885f8db656b8894775f30fb08cfd9d114d60f5be5782f06052772de07c6",
+  "treatment": "edit",
+  "candidate_version": "1.3.0",
+  "reason": "Restore existing inspectable, resumable, evidence-bounded campaign and complete local-room package promise. Add only enforcement and examples required to make accepted review, citation, custody, navigation and documentation claims truthful; no new research domain, host, autonomous retrieval, rendering output or publication promise. Existing campaign v1 remains readable; old review fields retained as historical and require actual review before current completion.",
+  "consumers": [
+    "nova-free",
+    "nova-emergent"
+  ],
+  "delivery_owner": "root"
+}

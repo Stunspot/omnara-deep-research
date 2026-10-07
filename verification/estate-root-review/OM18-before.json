@@ -1,0 +1,7 @@
+{
+  "case": "finite budget overflow",
+  "fixture": "E:\\Temp\\root-omnara-r1\\overflow-budget",
+  "exit": 0,
+  "stdout": "VALID structure and declared review boundary: E:\\Temp\\root-omnara-r1\\overflow-budget\n",
+  "stderr": ""
+}

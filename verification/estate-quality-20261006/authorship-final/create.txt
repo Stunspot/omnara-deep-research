@@ -1,0 +1,1 @@
+{"ok": true, "format": "cd-hesperos-documentation-authorship/v1", "output": "E:\\Github\\omnara-deep-research\\verification\\estate-quality-20261006\\authorship-final\\documentation-authorship.json"}

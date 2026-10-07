@@ -1,0 +1,242 @@
+{
+  "authored_files": [
+    {
+      "bytes": 3410,
+      "path": "README.md",
+      "sha256": "5c4c927d6003390e35cae37ae39a3b29282d582850be54671632dd721f8176ac"
+    },
+    {
+      "bytes": 3812,
+      "path": "START-HERE.md",
+      "sha256": "7fe9ce3f4b82b98881f53704e19ecad33d27d4747ebe581bf4281082ad0f5d9a"
+    },
+    {
+      "bytes": 7332,
+      "path": "RELEASE-NOTES.md",
+      "sha256": "f50775a04a04309baf2c3d01f6c10bf8397fc69813f21710c5dc97f4d4fcd84c"
+    },
+    {
+      "bytes": 8880,
+      "path": "docs/CAMPAIGN-ROOM.md",
+      "sha256": "d1a47aaa15875d02419e2c3990da66906e569265c6b5863e9c728edeef783520"
+    },
+    {
+      "bytes": 3832,
+      "path": "docs/CAMPAIGN-VAULT.md",
+      "sha256": "2bc8ec4dc3521e1a6cbb8b4b119a2245be4c63cb50daa7b69f42ae00e73326dc"
+    },
+    {
+      "bytes": 2966,
+      "path": "docs/INSTALLATION.md",
+      "sha256": "9209c677194fbacb3bde10658e495ba1d547e54ed9552db30c28f699cbe3846e"
+    },
+    {
+      "bytes": 2737,
+      "path": "docs/LIFECYCLE.md",
+      "sha256": "fbd20ccbd712c0561b418dcad2a98b58497155b28642077ae263b68185f71813"
+    },
+    {
+      "bytes": 2845,
+      "path": "docs/LIMITATIONS.md",
+      "sha256": "739ba4bcffee81b37260bd1a57edecc07cb683efa1256be31882456c2b45cb6f"
+    },
+    {
+      "bytes": 2722,
+      "path": "docs/MAINTAINERS.md",
+      "sha256": "2cc41b8bac87b7e213e20638258d40e2301de3f9b3b17ea1e2e4296e602522a5"
+    },
+    {
+      "bytes": 1770,
+      "path": "docs/README.md",
+      "sha256": "7adb48f5b30d6d503b5d7af778867ac4b8e1be40f4f4b56b9bd7d151e3077fdd"
+    },
+    {
+      "bytes": 3761,
+      "path": "docs/SECURITY-AND-PRIVACY.md",
+      "sha256": "4af161d27adfb3fee8820c4d5a35ce5ca2f0ddd9818d0c922afa81d8844f7fb4"
+    },
+    {
+      "bytes": 2586,
+      "path": "docs/SITE-SOURCE.md",
+      "sha256": "95c7813b267496b9988845e7d9e1db89ebc8e6f13d6f8e1cc0a666c8a2369199"
+    },
+    {
+      "bytes": 3547,
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "ba2b0b18161febb91ed25620b1b23628ea62b42e068b4936c32cc9be8ad7f686"
+    },
+    {
+      "bytes": 3368,
+      "path": "docs/VALIDATION.md",
+      "sha256": "7ad972e5597ffe0d1414d57adb71b5b229fa45e4ac2f9b82326cb649d89385f2"
+    },
+    {
+      "bytes": 6989,
+      "path": "docs/WORKFLOW.md",
+      "sha256": "4e860386927a5d99db4051336598fb2dfafbb34beea7daf2890fc0497518269f"
+    },
+    {
+      "bytes": 6553,
+      "path": "docs/index.html",
+      "sha256": "834af242855c5bc94c4fe91343a26a0e06316213c13050c12d2cc04440328792"
+    },
+    {
+      "bytes": 4328,
+      "path": "docs/install.html",
+      "sha256": "50b812ccf338aab0ca15b995b8cfaa46e4950304c5f50b95f3efe7ca2f70222b"
+    },
+    {
+      "bytes": 4582,
+      "path": "docs/support.html",
+      "sha256": "bc57252a56b9dca95d9196cc0de5362cdafe5fb56d32e56f259c4bbe581c4602"
+    },
+    {
+      "bytes": 4993,
+      "path": "docs/trust.html",
+      "sha256": "e573f20951c14a968226da08d7e1e0de9946ecf87575dd503762471ae5e4be59"
+    },
+    {
+      "bytes": 6112,
+      "path": "docs/workflows.html",
+      "sha256": "90e0c7b00965684ed9416b2dfb4acfc0be751707de2add7516b782222a031dfc"
+    },
+    {
+      "bytes": 1686,
+      "path": "examples/README.md",
+      "sha256": "e12dd58551cb8a44222be6400a41b6f8d1da543b1498a85ff409f4ca91d92a6a"
+    },
+    {
+      "bytes": 658,
+      "path": "examples/sea-level-comparison/campaign-summary.md",
+      "sha256": "0aed04ca5c64d57960b7122833febd23015305f4ddf9e2ff6c83ed35329645ca"
+    },
+    {
+      "bytes": 621,
+      "path": "examples/sea-level-comparison/citation-audit.md",
+      "sha256": "60052917957e63aef174f804d3f0993f24ab5593e0b5b5a3f3ccceabd23926f0"
+    },
+    {
+      "bytes": 443,
+      "path": "examples/sea-level-comparison/contradictions.md",
+      "sha256": "91ca58d8c43807a2b6d85ad6687f00f1179d2d03d17d30a30ec1fa9e25745b49"
+    },
+    {
+      "bytes": 533,
+      "path": "examples/sea-level-comparison/coverage-matrix.md",
+      "sha256": "dd33010ae03c54d7d71154b0137ba0db578259a21fb47544d30cd55cfffd9ba3"
+    },
+    {
+      "bytes": 2466,
+      "path": "examples/sea-level-comparison/draft/01-report.md",
+      "sha256": "f39fe249d3c97d93b32ffe7c23b7bfbdd539c5a4637561782a83a608a6c5c366"
+    },
+    {
+      "bytes": 346,
+      "path": "examples/sea-level-comparison/evidence-digest.md",
+      "sha256": "0ebfe3d1e740ad5e9955e211ff7bd725060e085cbe227da0989a3997aa06c48b"
+    },
+    {
+      "bytes": 637,
+      "path": "examples/sea-level-comparison/notes/S001.md",
+      "sha256": "5025b43c7eab7e9ca53a7502c8de3c9eaeecc65dfccad748436dc528c4967466"
+    },
+    {
+      "bytes": 481,
+      "path": "examples/sea-level-comparison/notes/S002.md",
+      "sha256": "9d01513f7b2382c0b6695ec16019510a1d57423d825467536fafbd0319ae49ca"
+    },
+    {
+      "bytes": 508,
+      "path": "examples/sea-level-comparison/notes/S003.md",
+      "sha256": "ee8e5ba71b979396463dc1459591fc7cf067f6298b1d81d1244b12c610d620c9"
+    },
+    {
+      "bytes": 292,
+      "path": "examples/sea-level-comparison/outline.md",
+      "sha256": "8ad73a889634e0ca2bcdd10d12fa75983e7b872a2948e1067a8ae6cdf656d537"
+    },
+    {
+      "bytes": 2466,
+      "path": "examples/sea-level-comparison/report.md",
+      "sha256": "f39fe249d3c97d93b32ffe7c23b7bfbdd539c5a4637561782a83a608a6c5c366"
+    },
+    {
+      "bytes": 923,
+      "path": "examples/sea-level-comparison/research-brief.md",
+      "sha256": "d168bb6a1c21d8db1f81a4354d8f6bdcf82e620482aee5be9aebec63200db641"
+    },
+    {
+      "bytes": 3425,
+      "path": "references/review-contract.md",
+      "sha256": "97cc619239319ff719930feb4bd07af652e350f6d762c3a4d74146a2d34855c2"
+    },
+    {
+      "bytes": 2875,
+      "path": "references/synthesis-and-citation-audit.md",
+      "sha256": "4affc03c01b6b0b68040bac5597cf83f9ff66dd74ce20e2f003a868fc43dbaa7"
+    },
+    {
+      "bytes": 2848,
+      "path": "references/campaign-operations.md",
+      "sha256": "63e7b74a5a94b9ae3be88329958d2fd1bae5d96b11e0ab6e9a4d965b67ee95ef"
+    },
+    {
+      "bytes": 3155,
+      "path": "delivery-sidecars/OMNARA Deep Research T-Free v1.3.0.md",
+      "sha256": "e89975db6eb8cc694ec5d77ba2f9ec3b8348ac698bd4e88036e9750efd0f61f0"
+    },
+    {
+      "bytes": 4733,
+      "path": "delivery-sidecars/OMNARA Deep Research T-Free v1.3.0 Extra.md",
+      "sha256": "8de033605b4cf61051ebb18c25659f23d196f01c449fce7992d921843e7bc4d1"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_snapshot": {
+      "bytes": 7306,
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    "mode": "in-process",
+    "run_id": "omnara-estate-20261006"
+  },
+  "authoring_response": {
+    "bytes": 1459,
+    "path": "verification/estate-quality-20261006/authorship-final/authoring-response.md",
+    "sha256": "a65cd044d72d64bb5b1b420003d5912df698c3d123dbff2937e96393a39f3997"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-10-07T05:04:41+00:00",
+  "documentation_fingerprint": "96b4d75202a2a3d9c9465922de263df992943be5d29cfe96b4a8afb9c4e5d572",
+  "documentation_manifest": {
+    "bytes": 1513,
+    "path": "verification/estate-quality-20261006/authorship-final/documentation-manifest.json",
+    "sha256": "5e4b2bfc341d90a30699104c473108ab23362f8ea7bc15a5e944976b5ab60b0f"
+  },
+  "evidence_packet": {
+    "bytes": 1394,
+    "path": "verification/estate-quality-20261006/authorship-final/evidence-packet.json",
+    "sha256": "5ffa87b29d494a8535cd16c8ab490e18c3b6cfe6a9a8b0d48163403362113829"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 2115,
+      "path": "verification/estate-quality-20261006/authorship-final/execution.md",
+      "sha256": "473b02f771742cddc71cc7ff41dcd87ee6a850c846f240652127e4af499761b0"
+    },
+    {
+      "bytes": 1459,
+      "path": "verification/estate-quality-20261006/authorship-final/authoring-response.md",
+      "sha256": "a65cd044d72d64bb5b1b420003d5912df698c3d123dbff2937e96393a39f3997"
+    }
+  ],
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "OMNARA Deep Research",
+    "version": "1.3.0"
+  }
+}

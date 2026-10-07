@@ -1,0 +1,7 @@
+AUTHORING_RUN_ID: omnara-estate-20261006
+AUTHORING_CAPABILITY: hesperos-documentation
+AUTHORSHIP_SCOPE: materially-revised
+AUTHORED_FILES_COUNT: 38
+AUTHORED_FILES: README.md|START-HERE.md|RELEASE-NOTES.md|docs/CAMPAIGN-ROOM.md|docs/CAMPAIGN-VAULT.md|docs/INSTALLATION.md|docs/LIFECYCLE.md|docs/LIMITATIONS.md|docs/MAINTAINERS.md|docs/README.md|docs/SECURITY-AND-PRIVACY.md|docs/SITE-SOURCE.md|docs/TROUBLESHOOTING.md|docs/VALIDATION.md|docs/WORKFLOW.md|docs/index.html|docs/install.html|docs/support.html|docs/trust.html|docs/workflows.html|examples/README.md|examples/sea-level-comparison/campaign-summary.md|examples/sea-level-comparison/citation-audit.md|examples/sea-level-comparison/contradictions.md|examples/sea-level-comparison/coverage-matrix.md|examples/sea-level-comparison/draft/01-report.md|examples/sea-level-comparison/evidence-digest.md|examples/sea-level-comparison/notes/S001.md|examples/sea-level-comparison/notes/S002.md|examples/sea-level-comparison/notes/S003.md|examples/sea-level-comparison/outline.md|examples/sea-level-comparison/report.md|examples/sea-level-comparison/research-brief.md|references/review-contract.md|references/synthesis-and-citation-audit.md|references/campaign-operations.md|delivery-sidecars/OMNARA Deep Research T-Free v1.3.0.md|delivery-sidecars/OMNARA Deep Research T-Free v1.3.0 Extra.md
+DOCUMENTATION_FINGERPRINT: 96b4d75202a2a3d9c9465922de263df992943be5d29cfe96b4a8afb9c4e5d572
+HESPEROS_AUTHORING_COMPLETE

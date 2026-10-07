@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "actual_cli_controls": 18,
+  "authored_documents_unchanged": 38,
+  "r1_source_delta": [
+    "scripts/evidence_contract.py",
+    "scripts/research_campaign.py"
+  ],
+  "new_regression_file": "tests/test_review_chronology.py",
+  "cases": [
+    {
+      "name": "review-before-access-same-day",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r1\\review-before-access-same-day"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete campaign: semantic review predates recorded source access\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "valid-cross-zone-order",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r1\\valid-cross-zone-order"
+      ],
+      "exit": 0,
+      "stdout": "VALID structure and declared review boundary: E:\\Temp\\root-omnara-r1\\valid-cross-zone-order\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "unknown-review-offset",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r1\\unknown-review-offset"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete campaign: semantic review needs valid dated reviewer observation\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "overflow-budget",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r1\\overflow-budget"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: non-finite JSON number: 1e400\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "legitimate-declared-completion",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\legitimate-declared-completion"
+      ],
+      "exit": 0,
+      "stdout": "VALID structure and declared review boundary: E:\\Temp\\root-omnara-r2\\legitimate-declared-completion\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "missing-review",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\missing-review"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete campaign: No current content-bound semantic review recorded.\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "changed-note",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\changed-note"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete campaign structural audit missing, failed or stale\nERROR: complete campaign: semantic review is stale for current inquiry/evidence/report\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "changed-answer",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\changed-answer"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete campaign structural audit missing, failed or stale\nERROR: complete campaign: semantic review is stale for current inquiry/evidence/report\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "hidden-bibliography-current-review",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\hidden-bibliography-current-review"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete citation integrity: S001: visible Sources entry needs exact title and locator\nERROR: complete campaign structural audit missing, failed or stale\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "forged-structural-pass",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\forged-structural-pass"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete citation integrity: report marker has no source: S099\nERROR: complete citation integrity: S001: ledger says cited but no visible report-body citation exists\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "status-only-complete",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\status-only-complete"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete phase and status must agree\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "unresolved-reviewed-claim",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\unresolved-reviewed-claim"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: complete campaign: C001: unresolved review cannot pass\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "cited-inaccessible-source",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\cited-inaccessible-source"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: source row 1: excluded, duplicate or inaccessible source cannot be cited\nERROR: campaign.json: counter inaccessible does not match ledger count 1\nERROR: complete campaign: semantic review is stale for current inquiry/evidence/report\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "subject-never-issues-review",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "review-subject",
+        "E:\\Temp\\root-omnara-r2\\readonly-subject"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"format\": \"omnara-review-subject/v1\",\n  \"sha256\": \"2ab30a870c36a5b3efacd3227029edd66e0829da2a91e709810f64250c49433c\",\n  \"files_sha256\": {\n    \"campaign-summary.md\": \"d57a2b6e509c7d2b8b7c13377e92f75773b3572ad228c1d089139d9a43953c39\",\n    \"citation-audit.md\": \"8aa28f7b48dbf45f8d59a0fbd0d944ac13385dd83927d1dec1aea1e0362ddc7c\",\n    \"claim-ledger.jsonl\": \"65834f4e5a1ab82658a4acea0b5d54495e7298d011278fb51e9fbb95f5a98127\",\n    \"contradictions.md\": \"45605ca6015af368e9564a13e72a23e32d7863aff760a54b8d0c57246704b3a5\",\n    \"coverage-matrix.md\": \"553c4d818beda68068bdc622b76ff3795ad703c32f32cde8757260b0e7e1d953\",\n    \"evidence-digest.md\": \"5ee4c3e12ad1de6408759790dc620f22b7cbe1b66420799c08dbe698e0c6d812\",\n    \"notes/S001.md\": \"965cbd20d6a915a4d692af255005bfaeb511d3fd2933aab6a44303f724046d77\",\n    \"notes/SOURCE-NOTE-TEMPLATE.md\": \"da1fd7272a317eeb2bda18f281fdabc78e31f11f0cac74f16397316290549532\",\n    \"outline.md\": \"27f1d8e2e6061c4128c543d50966d8ca813eb76cedb9ae08998c16f87d065c5c\",\n    \"query-ledger.jsonl\": \"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b\",\n    \"report.md\": \"06e2c8a302e78ea078232883e91a8a65476867ab66994d068f04a7b7677ccd43\",\n    \"research-brief.md\": \"964afe7ecdf5ea9debcad3f5dedd8cbf8443f616e39f4e67d52616ab861fec48\",\n    \"source-ledger.jsonl\": \"b2472e7a7506c3cdd20306d42abf986bfc9fc479b6dd3155e516c33c3a0e8178\"\n  },\n  \"scope\": \"Native campaign content and declared evidence only; external URLs and unbundled originals are not captured or authenticated.\"\n}\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "assembly-preserves-edited-report",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\assemble_report.py",
+        "E:\\Temp\\root-omnara-r2\\assembly-preserves-edited-report"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: report.md differs from drafts; inspect both before --replace. Existing report preserved.\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "worked-primary-source-campaign",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Github\\omnara-deep-research\\examples\\sea-level-comparison"
+      ],
+      "exit": 0,
+      "stdout": "VALID structure and declared review boundary: E:\\Github\\omnara-deep-research\\examples\\sea-level-comparison\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "publication-after-exact-cutoff",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\publication-after-exact-cutoff"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: source row 1: publication beyond declared evidence cutoff\n",
+      "stderr": "",
+      "pass": true
+    },
+    {
+      "name": "date-only-granularity-kept",
+      "args": [
+        "E:\\Github\\omnara-deep-research\\scripts\\research_campaign.py",
+        "validate",
+        "E:\\Temp\\root-omnara-r2\\date-only-granularity-kept"
+      ],
+      "exit": 0,
+      "stdout": "VALID structure and declared review boundary: E:\\Temp\\root-omnara-r2\\date-only-granularity-kept\n",
+      "stderr": "",
+      "pass": true
+    }
+  ],
+  "boundary": "Fictional declarations exercise mechanics; no independent research/model qualification. Worked campaign is validated structurally; historical authorship and source review receipts unchanged."
+}

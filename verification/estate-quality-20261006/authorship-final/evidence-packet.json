@@ -1,0 +1,28 @@
+{
+  "product": "OMNARA Deep Research",
+  "version": "1.3.0",
+  "audience": "Research requester, returning investigator and package maintainer",
+  "top_tasks": [
+    "Open and browse the right investigation; see its exact question.",
+    "Distinguish a recorded citation from a source-supported claim.",
+    "Read a complete self-contained answer and follow its evidence.",
+    "Recover stale review, rejected save and malformed records without losing work.",
+    "Install, verify and return using the complete product."
+  ],
+  "authority": "User-authorized exhaustive estate repair; parent owns edition and central delivery.",
+  "baseline": "verification/estate-quality-20261006/baseline.json",
+  "source_inputs": [
+    "SKILL.md",
+    "scripts/research_campaign.py",
+    "scripts/evidence_contract.py",
+    "workspace/campaign.py",
+    "workspace/app.js",
+    "scripts/build_workspace_release.py"
+  ],
+  "observed_evidence": [
+    "verification/estate-quality-20261006/final-checks/results.json",
+    "verification/estate-quality-20261006/browser-evidence-r3/results.json",
+    "examples/sea-level-comparison/source-ledger.jsonl"
+  ],
+  "truth_boundary": "Current content-bound declared review; no automated semantic entailment, source authenticity, reviewer identity authentication, universal accessibility or model trial. The optional loopback service is real and browser-tested locally."
+}

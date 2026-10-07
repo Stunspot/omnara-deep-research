@@ -20,3 +20,6 @@
 # Binary containers and media.
 *.webp binary
 *.mp4 binary
+
+# Immutable authoring capability snapshot: retain its recorded SHA256 bytes.
+verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md -text
