@@ -26,6 +26,8 @@ The report is an answer, not a pile of summaries. [Read a complete worked inquir
 
 Source counts are recorded work, not confidence. Citation integrity checks visible markers, sources and bibliography. A content-bound semantic review records a reviewer's actual judgment about the current inquiry, notes and report; software cannot authenticate that judgment or establish source truth. Long reports and broad source counts must be earned by the question.
 
-Version 1.3.0, maintained in place to restore the accepted campaign promise. See [release notes](RELEASE-NOTES.md) and the [current documentation boundary](verification/documentation-review.md). Historical ancestry includes the original Nova + MIND distribution; standalone MIND is deprecated and is not an installation requirement. Omnara remains an individual skill and complete local room, not a universal plugin installer.
+Version 1.3.1 carries the accepted campaign and research-room repairs under a distinct updateable identity. See [release notes](RELEASE-NOTES.md) and the [current documentation boundary](verification/documentation-review.md). Historical ancestry includes the original Nova + MIND distribution; standalone MIND is deprecated and is not an installation requirement. Omnara remains an individual skill and complete local room, not a universal plugin installer.
 
 [MIT license](LICENSE.md). Retrieved sources retain their own rights. [Repository](https://github.com/Stunspot/omnara-deep-research) · [Project site](https://stunspot.github.io/omnara-deep-research/) · [Security reporting](SECURITY.md).
+
+Optional [Windows and Mac entries](docs/APP-ENTRY.md) reuse the package launchers and approved globe icon. They are created only by your explicit command; the browser room and site carry the same icon.

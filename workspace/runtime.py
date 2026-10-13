@@ -101,10 +101,13 @@ def launch(product, default_name, adapter, static):
             files={'/':'index.html','/app.js':'app.js','/style.css':'style.css','/skins.css':'skins.css',
                    '/assets/tracework.png':'assets/tracework.png',
                    '/assets/survey-folio.png':'assets/survey-folio.png',
-                   '/assets/proof-cabinet.png':'assets/proof-cabinet.png'}
+                   '/assets/proof-cabinet.png':'assets/proof-cabinet.png',
+                   '/favicon.ico':'assets/omnara.ico','/assets/omnara.ico':'assets/omnara.ico',
+                   '/assets/omnara-icon.png':'assets/omnara-icon.png'}
             if path not in files: return self.respond(404,{'error':'Not found'})
             mime={'index.html':'text/html; charset=utf-8','app.js':'text/javascript; charset=utf-8',
-                  'style.css':'text/css; charset=utf-8','skins.css':'text/css; charset=utf-8'}
+                  'style.css':'text/css; charset=utf-8','skins.css':'text/css; charset=utf-8',
+                  'assets/omnara.ico':'image/x-icon'}
             file=files[path]
             self.respond(200,(static/file).read_bytes(),mime.get(file,'image/png'))
         do_GET=handle_request

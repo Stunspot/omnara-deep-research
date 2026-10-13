@@ -1,0 +1,11 @@
+{
+  "schema": "cd-release-decision/v1",
+  "kind": "update",
+  "effect": "authorized_reissue",
+  "baseline_version": "1.3.0",
+  "baseline_bundle_fingerprint": "sha256:c9d6383e5553746a3fb0fed93c87aa14462bd86355e5be78779dcd8565f4a306",
+  "target_version": "1.3.1",
+  "reason": "Carries the accepted campaign-wide evidence terrain, three research-room environments, readable source inspection, content-bound review, truthful chronology and budgets, safe save/export/assembly and damaged-campaign recovery into a distinct updateable release. Operative research and room code, source-method examples and approved artwork remain unchanged. Owner requires every changed Augment to have a distinct updateable version. Closes the concrete companion-presentation gap with browser icons and explicit native entries using accepted artwork; app/research/theme semantics and data custody preserved.",
+  "evidence": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-completion-20261010\\omnara-deep-research\\FINAL-REVIEW-v1.3.1.md",
+  "reviewed_at": "2026-10-13T12:39:11.387593+00:00"
+}

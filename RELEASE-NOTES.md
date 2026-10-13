@@ -1,3 +1,13 @@
+# Current 1.3.1 updateable reissue
+
+Carries the accepted campaign-wide evidence terrain, three research-room environments, readable source inspection, content-bound review, truthful chronology and budgets, safe save/export/assembly and damaged-campaign recovery into a distinct updateable release. Operative research and room code, source-method examples and approved artwork remain unchanged.
+
+Adds the previously missing browser icon routes and explicit no-clobber Windows shortcut / portable Mac icon binding, using mechanically derived approved globe artwork. Existing research homes and healthy services are preserved.
+
+Original deterministic, expert and room-browser qualification retains its original cutoff and scope; no new model or participant outcome is claimed.
+
+## Retained 1.3.0 repair and release history
+
 # Current 1.3.0 restoration — estate review
 
 Restores the existing inspectable research/campaign promise: typed and dated records, preserved exclusion history, visible bibliography, content-bound declared semantic review, protected report assembly, damaged-campaign recovery, coherent review display and complete package custody. Refreshes current entry, local-service/privacy, validation, return and recovery guidance. Includes a real bounded source-method comparison with explicit limits and useful practice. No new autonomous research, host, output format or publication promise; prior release bytes and historical evidence remain preserved.

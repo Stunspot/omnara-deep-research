@@ -23,3 +23,6 @@
 
 # Immutable authoring capability snapshot: retain its recorded SHA256 bytes.
 verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md -text
+
+# Frozen current customer launcher retains accepted Windows-native bytes.
+/release-v1.3.1/Open.cmd -text
