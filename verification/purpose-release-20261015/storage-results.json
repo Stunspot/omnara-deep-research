@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "checks": [
+    "UI changes current work folder",
+    "next ordinary launch uses remembered selection",
+    "UI reconnects original store"
+  ]
+}

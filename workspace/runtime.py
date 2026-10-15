@@ -4,6 +4,7 @@ import argparse, hashlib, json, os, secrets, subprocess, sys, time, urllib.reque
 from contextlib import contextmanager
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from work_io import Materials,select_home
 
 from file_ops import atomic
 from custody import reject_links
@@ -33,10 +34,10 @@ def launch(product, default_name, adapter, static):
     parser.add_argument('--no-browser', action='store_true')
     parser.add_argument('--port', type=int, default=0)
     args = parser.parse_args()
-    root = reject_links(args.data_root or Path(os.environ.get(product.upper().replace('-','_')+'_HOME', str(Path.home()/'Documents'/default_name))))
+    root = reject_links(select_home(product,Path(os.environ.get(product.upper().replace('-','_')+'_HOME', str(Path.home()/'Documents'/default_name))),args.data_root))
     root.mkdir(parents=True, exist_ok=True)
     source = Path(__file__).resolve().parent
-    identity = hashlib.sha256((product+'\n'+str(source)+'\n'+str(root)).encode()).hexdigest()
+    identity = hashlib.sha256((product+'\n'+str(source)+'\n'+str(root)+'\n'+hashlib.sha256(b''.join(p.read_bytes() for p in sorted(source.glob('*')) if p.is_file())).hexdigest()).encode()).hexdigest()
     registry = root/'.workspace'/('instance-'+identity[:16]+'.json')
     def alive(record):
         try:
@@ -66,6 +67,7 @@ def launch(product, default_name, adapter, static):
         print(url); return
     token = secrets.token_urlsafe(32)
     app = adapter(root)
+    materials=Materials(root,product,source/'open.py','--data-root')
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *a): pass
         def respond(self, code, body, mime='application/json'):
@@ -86,11 +88,11 @@ def launch(product, default_name, adapter, static):
                 if not secrets.compare_digest(self.headers.get('X-Workspace-Token',''),token): return self.respond(403,{'error':'Open the workspace through its launcher'})
                 try:
                     length=int(self.headers.get('Content-Length','0'))
-                    if length<0 or length>16*1024*1024: raise ValueError('Request exceeds 16 MB')
+                    if length<0 or length>45*1024*1024: raise ValueError('File exceeds 32 MB')
                     from evidence_contract import loads
                     data=loads(self.rfile.read(length).decode('utf-8')) if length else {}
                     if not isinstance(data,dict):raise ValueError('Request body must be an object')
-                    result=app.request(self.command,path,data)
+                    result=materials.handle(path,data) if path in {'/api/material','/api/material-get','/api/browse','/api/location'} else app.request(self.command,path,data)
                     if isinstance(result, tuple): return self.respond(200,*result)
                     self.respond(200,result)
                 except app.Conflict as exc: self.respond(409,{'error':str(exc)})
@@ -98,14 +100,14 @@ def launch(product, default_name, adapter, static):
                 except Exception as exc: self.respond(500,{'error':str(exc)})
                 return
             if self.command!='GET': return self.respond(405,{'error':'Method not allowed'})
-            files={'/':'index.html','/app.js':'app.js','/style.css':'style.css','/skins.css':'skins.css',
+            files={'/work.js':'work.js','/work.css':'work.css','/common.js':'common.js','/advanced':'advanced.html','/':'index.html','/app.js':'app.js','/style.css':'style.css','/skins.css':'skins.css',
                    '/assets/tracework.png':'assets/tracework.png',
                    '/assets/survey-folio.png':'assets/survey-folio.png',
                    '/assets/proof-cabinet.png':'assets/proof-cabinet.png',
                    '/favicon.ico':'assets/omnara.ico','/assets/omnara.ico':'assets/omnara.ico',
                    '/assets/omnara-icon.png':'assets/omnara-icon.png'}
             if path not in files: return self.respond(404,{'error':'Not found'})
-            mime={'index.html':'text/html; charset=utf-8','app.js':'text/javascript; charset=utf-8',
+            mime={'work.js':'text/javascript; charset=utf-8','common.js':'text/javascript; charset=utf-8','work.css':'text/css; charset=utf-8','advanced.html':'text/html; charset=utf-8','index.html':'text/html; charset=utf-8','app.js':'text/javascript; charset=utf-8',
                   'style.css':'text/css; charset=utf-8','skins.css':'text/css; charset=utf-8',
                   'assets/omnara.ico':'image/x-icon'}
             file=files[path]

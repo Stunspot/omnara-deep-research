@@ -1,0 +1,9 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "product": "OMNARA Deep Research",
+  "version": "1.4.0",
+  "customer_docs": [
+    "delivery-sidecars/OMNARA Deep Research T-Free v1.4.0 Extra.md"
+  ],
+  "scope": "Current companion materially rewritten from observed primary app workflow."
+}

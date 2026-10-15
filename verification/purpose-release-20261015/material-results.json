@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "checks": [
+    "DOCX local extraction",
+    "PDF local extraction",
+    "missing source recovery message",
+    "source directory browse",
+    "missing remembered root falls back without creating false empty original"
+  ]
+}

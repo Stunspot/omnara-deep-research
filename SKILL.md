@@ -5,6 +5,10 @@ description: "🔎 Broad source inquiry and long-form reports."
 
 # Investigate until the evidence has shape
 
+## Purpose-led application 1.4.0
+
+Ask a question, add a useful document or pasted passage, select a finding, and use it in your answer. The app does not invent research conclusions. Read [the working guide](workspace/WORKING-GUIDE.md) for the ordinary entry, material, storage selection and return paths. The app uses the same native objects as this skill; do not make users author schemas or fill administrative records before useful work. Question and search planning; ordinary document, text PDF, image, link and note intake; side-by-side source reading and notes; findings with source links; an editable cited answer and readable export. Existing specialist views remain under More tools.
+
 ## Open the campaign room
 
 For ordinary requests such as "open OMNARA", "open the campaign room", or "show my research campaigns", run the package's `Open.cmd` on Windows or `python3 workspace/open.py` on macOS/Linux. The launcher starts or reconnects the matching private loopback service, confirms health, and opens the browser. Python 3.10+ is required. Use `--data-root <owner-selected-folder>` or `OMNARA_HOME` when the owner has a research store; the portable default is `Documents/OMNARA Campaigns`. Read `docs/CAMPAIGN-ROOM.md` for importing existing native campaign vaults. Agent and room operate on the same `campaign.json`, Markdown, and JSONL records. Save and import validate native evidence states; UI counts do not establish semantic support. Desktop shortcuts are optional and require explicit owner consent; never install them silently.

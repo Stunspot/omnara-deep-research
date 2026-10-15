@@ -1,0 +1,9 @@
+{
+  "version": "1.4.0",
+  "runtime_entry": "Open.cmd",
+  "current_guide": "workspace/WORKING-GUIDE.md",
+  "current_release_notes": "RELEASE-NOTES-v1.4.0.md",
+  "current_complete_zip": "release-candidates/purpose-v1.4.0-companion-r1/OMNARA Deep Research v1.4.0.zip",
+  "current_companion": "delivery-v1.4.0/OMNARA Deep Research T-Free v1.4.0 Extra.md",
+  "boundary": "The sealed native runtime is unchanged by this repository custody pointer; historical README release paragraph describes1.3.1."
+}

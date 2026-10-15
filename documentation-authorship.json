@@ -1,0 +1,57 @@
+{
+  "authored_files": [
+    {
+      "bytes": 2597,
+      "path": "delivery-sidecars/OMNARA Deep Research T-Free v1.4.0 Extra.md",
+      "sha256": "786bce786abb5f893fd75054aa48fc6c1d81867e0493d9492be25cd908db36db"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_snapshot": {
+      "bytes": 7306,
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    "mode": "in-process",
+    "run_id": "omnara-deep-research-companion-20261015"
+  },
+  "authoring_response": {
+    "bytes": 362,
+    "path": "verification/companion-format-20261015/authoring-response.md",
+    "sha256": "e68167188df23212ce98dfe631d76a968dbb7df9e5b44c835f2d3a14f308df6d"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-10-15T06:22:49+00:00",
+  "documentation_fingerprint": "c804316344f3ec500655b0a19eb2f1853a6013b2c9733941afcf978ebd104a91",
+  "documentation_manifest": {
+    "bytes": 298,
+    "path": "verification/companion-format-20261015/authored-delta.json",
+    "sha256": "7d8edff25356cf5a2a983cfcf0c3fb7c8a29bc416e918d5af8dca72f341e8d78"
+  },
+  "evidence_packet": {
+    "bytes": 374,
+    "path": "verification/companion-format-20261015/evidence.md",
+    "sha256": "a4c9cb4e1d8a899f0f47196d3875b7f7cec650005980aa87e61414f3361c2416"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 369,
+      "path": "verification/companion-format-20261015/execution.md",
+      "sha256": "a9877a3f7392c1ea2fdb0a0d3330f82b617aea0e33cd5117dd43088506d58d44"
+    },
+    {
+      "bytes": 362,
+      "path": "verification/companion-format-20261015/authoring-response.md",
+      "sha256": "e68167188df23212ce98dfe631d76a968dbb7df9e5b44c835f2d3a14f308df6d"
+    }
+  ],
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "OMNARA Deep Research",
+    "version": "1.4.0"
+  }
+}

@@ -1,0 +1,1090 @@
+{
+  "repo": "omnara-deep-research",
+  "version": "1.4.0",
+  "root": "E:\\Github\\omnara-deep-research",
+  "parent_commit": "33759527bf75258df9fac43afd2f87fdae255ac5",
+  "primary_branch": "main",
+  "primary_index_sha256": "3342947ddd959c24cd20b4cdeb17ae38722b46b543fa99b645fa1f2cf694598c",
+  "branch": "codex/purpose-release-v1.4.0-20261015",
+  "scopes": [
+    "CONTRIBUTING.md",
+    "CURRENT-RELEASE.json",
+    "LICENSE.md",
+    "Open.cmd",
+    "Open.command",
+    "README.md",
+    "RELEASE-NOTES-v1.4.0.md",
+    "RELEASE-NOTES.md",
+    "SECURITY.md",
+    "SKILL.md",
+    "START-HERE.md",
+    "SUPPORT.md",
+    "VERSION",
+    "agents/",
+    "assets/",
+    "delivery-sidecars/OMNARA Deep Research T-Free v1.4.0 Extra.md",
+    "delivery-sidecars/OMNARA Deep Research.png",
+    "delivery-v1.4.0/OMNARA Deep Research T-Free v1.4.0 Extra.md",
+    "delivery-v1.4.0/OMNARA Deep Research T-Free v1.4.0.md",
+    "delivery-v1.4.0/OMNARA Deep Research.png",
+    "docs/",
+    "documentation-authorship.json",
+    "examples/",
+    "fallbacks/",
+    "knowledge/",
+    "personas/",
+    "references/",
+    "release-decision-v1.4.0.json",
+    "schemas/",
+    "scripts/",
+    "tests/",
+    "verification/companion-format-20261015/",
+    "verification/companion-format-20261015/authored-delta.json",
+    "verification/companion-format-20261015/authoring-response.md",
+    "verification/companion-format-20261015/evidence.md",
+    "verification/companion-format-20261015/execution.md",
+    "verification/documentation-review.md",
+    "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+    "verification/purpose-release-20261015/",
+    "workspace/"
+  ],
+  "files": [
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1203,
+      "sha256": "0ccbfd8b6b762d174064b7ec6d789dfebc2400b2634788e989b74fb874ca4084"
+    },
+    {
+      "path": "CURRENT-RELEASE.json",
+      "bytes": 506,
+      "sha256": "97fee5d47ec34b4e281d7d03e2d7391bbaa5cfe7bf77c47b9817077ca4c2a0ac"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 1378,
+      "sha256": "2fca94eb398b7232ffef41f9cb0aaaca84afde2ce50a55bd1053acb73e85b10b"
+    },
+    {
+      "path": "Open.cmd",
+      "bytes": 171,
+      "sha256": "aa55ea1a9a003516fddf2ba47701b2ce1a8aaa7ace634b49658a97dae7eebc0e"
+    },
+    {
+      "path": "Open.command",
+      "bytes": 77,
+      "sha256": "6967b4d0ff9ed5293953ecd2d0fd073943dbbe90ce5dd5e86f38e848dfa014d2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3644,
+      "sha256": "d028858bd4f7aee3cf4e683f0c7d30b1a0d410658b1fb382d7c9d06b33e218c5"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.4.0.md",
+      "bytes": 630,
+      "sha256": "d6b31c59accba05db332f31544e9ad0568accf7b308d25a0d0c2053e7690b3f3"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "bytes": 8153,
+      "sha256": "a7fad6ea32c281fe944469eba07a27d6f03e6c18414a87ae77e151bca5579b46"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1344,
+      "sha256": "7fc9ec35941abafd70a97db804096e1b792d5d8081f0e941ea2ebdebedc82739"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9778,
+      "sha256": "6057e3e97e11f2f5d3dca0b2b824a54d988496b6195dd79cfe21778a68e299ca"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 3812,
+      "sha256": "7fe9ce3f4b82b98881f53704e19ecad33d27d4747ebe581bf4281082ad0f5d9a"
+    },
+    {
+      "path": "SUPPORT.md",
+      "bytes": 1007,
+      "sha256": "d239f876c19d69b353b5391ddecc9cd1ff617ecc4fa7cf80549847b0a8fa5195"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 7,
+      "sha256": "382e5778205c344619abd0106bc48587a3a849c7e94c80cb8e329754de68b1f6"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 255,
+      "sha256": "83101cd935e2a64da42ddc4af3b823fc991547e68d2ecfa960f110d08d20308e"
+    },
+    {
+      "path": "assets/campaign-vault/campaign-summary.md",
+      "bytes": 407,
+      "sha256": "3bd588b5f6cc3c167d5d229d7cacb1698b005e5b303488e56ff8674fcf0445b8"
+    },
+    {
+      "path": "assets/campaign-vault/campaign.json",
+      "bytes": 788,
+      "sha256": "0d337fc232decd20ef739f364f0c216ee90d55d389b2e5224b09b2bb4f8f0d30"
+    },
+    {
+      "path": "assets/campaign-vault/citation-audit.md",
+      "bytes": 244,
+      "sha256": "8aa28f7b48dbf45f8d59a0fbd0d944ac13385dd83927d1dec1aea1e0362ddc7c"
+    },
+    {
+      "path": "assets/campaign-vault/claim-ledger.jsonl",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "assets/campaign-vault/contradictions.md",
+      "bytes": 302,
+      "sha256": "bcf8de93c47d50b0effb7e0eba0e5fe63872abf180f2d01ac2a957829e2b7e11"
+    },
+    {
+      "path": "assets/campaign-vault/coverage-matrix.md",
+      "bytes": 247,
+      "sha256": "94a6e89cd4662d3d53cf8e06cdea40cd9b74bb9814111dccc080439e7415a3c8"
+    },
+    {
+      "path": "assets/campaign-vault/draft/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/campaign-vault/evidence-digest.md",
+      "bytes": 196,
+      "sha256": "5ee4c3e12ad1de6408759790dc620f22b7cbe1b66420799c08dbe698e0c6d812"
+    },
+    {
+      "path": "assets/campaign-vault/notes/SOURCE-NOTE-TEMPLATE.md",
+      "bytes": 760,
+      "sha256": "da1fd7272a317eeb2bda18f281fdabc78e31f11f0cac74f16397316290549532"
+    },
+    {
+      "path": "assets/campaign-vault/outline.md",
+      "bytes": 150,
+      "sha256": "27f1d8e2e6061c4128c543d50966d8ca813eb76cedb9ae08998c16f87d065c5c"
+    },
+    {
+      "path": "assets/campaign-vault/query-ledger.jsonl",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "assets/campaign-vault/report.md",
+      "bytes": 48,
+      "sha256": "e6def10acf097f038201c525d14c0ecf93187372d532005fa981f45467684eaa"
+    },
+    {
+      "path": "assets/campaign-vault/research-brief.md",
+      "bytes": 723,
+      "sha256": "61b15df2d308d834bf9aef567047b9953d62b1a414551a5f8f362d7893c31a50"
+    },
+    {
+      "path": "assets/campaign-vault/source-ledger.jsonl",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "assets/manuscript-plan.md",
+      "bytes": 1213,
+      "sha256": "ecd7e812f9ff4b0e34a11587965f0dfa4751cb6ab66548d6a7d762924edb8e3b"
+    },
+    {
+      "path": "delivery-sidecars/OMNARA Deep Research T-Free v1.4.0 Extra.md",
+      "bytes": 2597,
+      "sha256": "786bce786abb5f893fd75054aa48fc6c1d81867e0493d9492be25cd908db36db"
+    },
+    {
+      "path": "delivery-sidecars/OMNARA Deep Research.png",
+      "bytes": 3233014,
+      "sha256": "8e9a4e773e3a5e2987b5a9cc2e0aa2557f408584022dcbe70f370f1c1898b3e0"
+    },
+    {
+      "path": "delivery-v1.4.0/OMNARA Deep Research T-Free v1.4.0 Extra.md",
+      "bytes": 2597,
+      "sha256": "786bce786abb5f893fd75054aa48fc6c1d81867e0493d9492be25cd908db36db"
+    },
+    {
+      "path": "delivery-v1.4.0/OMNARA Deep Research T-Free v1.4.0.md",
+      "bytes": 3375,
+      "sha256": "fb189e6b604c57e29e97a0651739222472d34d9958008dc90b95f93c0f9b46fa"
+    },
+    {
+      "path": "delivery-v1.4.0/OMNARA Deep Research.png",
+      "bytes": 3233014,
+      "sha256": "8e9a4e773e3a5e2987b5a9cc2e0aa2557f408584022dcbe70f370f1c1898b3e0"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/404.html",
+      "bytes": 1181,
+      "sha256": "3e3a5822854cee146b9130063ba594d956ca208f692e3e7a7ac254b766cc25a0"
+    },
+    {
+      "path": "docs/APP-ENTRY.md",
+      "bytes": 1748,
+      "sha256": "47a71c2a6f987533392300c9c19808579106ce12fd6692de617b7e822195d7fd"
+    },
+    {
+      "path": "docs/CAMPAIGN-ROOM.md",
+      "bytes": 9237,
+      "sha256": "aeb2b5626863d9600e32df00cc9c3f2e9bb92dd6a1aed8817c6189f396ee0edd"
+    },
+    {
+      "path": "docs/CAMPAIGN-VAULT.md",
+      "bytes": 3832,
+      "sha256": "2bc8ec4dc3521e1a6cbb8b4b119a2245be4c63cb50daa7b69f42ae00e73326dc"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "bytes": 2966,
+      "sha256": "9209c677194fbacb3bde10658e495ba1d547e54ed9552db30c28f699cbe3846e"
+    },
+    {
+      "path": "docs/LIFECYCLE.md",
+      "bytes": 2737,
+      "sha256": "fbd20ccbd712c0561b418dcad2a98b58497155b28642077ae263b68185f71813"
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "bytes": 2845,
+      "sha256": "739ba4bcffee81b37260bd1a57edecc07cb683efa1256be31882456c2b45cb6f"
+    },
+    {
+      "path": "docs/MAINTAINERS.md",
+      "bytes": 2722,
+      "sha256": "757e1b7578d3929ea0769a9ab3f5f571d7236edbbc3983f02a30b6e195a573d8"
+    },
+    {
+      "path": "docs/PROMPT-RECIPES.md",
+      "bytes": 3781,
+      "sha256": "ae08f24a4157620a5e268745d6f38474fc30c008683ac87d7c07ba7413885247"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 1770,
+      "sha256": "7adb48f5b30d6d503b5d7af778867ac4b8e1be40f4f4b56b9bd7d151e3077fdd"
+    },
+    {
+      "path": "docs/SECURITY-AND-PRIVACY.md",
+      "bytes": 3761,
+      "sha256": "4af161d27adfb3fee8820c4d5a35ce5ca2f0ddd9818d0c922afa81d8844f7fb4"
+    },
+    {
+      "path": "docs/SITE-SOURCE.md",
+      "bytes": 2586,
+      "sha256": "95c7813b267496b9988845e7d9e1db89ebc8e6f13d6f8e1cc0a666c8a2369199"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "bytes": 3547,
+      "sha256": "ba2b0b18161febb91ed25620b1b23628ea62b42e068b4936c32cc9be8ad7f686"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 3368,
+      "sha256": "7ad972e5597ffe0d1414d57adb71b5b229fa45e4ac2f9b82326cb649d89385f2"
+    },
+    {
+      "path": "docs/WORKFLOW.md",
+      "bytes": 6989,
+      "sha256": "4e860386927a5d99db4051336598fb2dfafbb34beea7daf2890fc0497518269f"
+    },
+    {
+      "path": "docs/assets/omnara-pages-hero.png",
+      "bytes": 1360904,
+      "sha256": "351df35906ec321c9d69cdb8d772b2bd914138ab0955f99e6530d8bae898b615"
+    },
+    {
+      "path": "docs/assets/omnara-readme-hero.png",
+      "bytes": 1616718,
+      "sha256": "d018e1e1a8d388628f117ac2c174511c83f0a8d9d613cb5d422abc6e3a892392"
+    },
+    {
+      "path": "docs/assets/omnara-social-card.png",
+      "bytes": 983023,
+      "sha256": "18aede37df70582bd4d5fbe138b1c4cc251c4c63e2ddc13be822ca3143475b16"
+    },
+    {
+      "path": "docs/assets/omnara.ico",
+      "bytes": 261071,
+      "sha256": "968853189f9afc892206d3132e82d83ffb26fd1af476e263d41b207cc1d98cfc"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 6615,
+      "sha256": "9ab24d7e40b99f952769b2df4a396449d8eea90564bd0cae3dd1d420588e0be8"
+    },
+    {
+      "path": "docs/install.html",
+      "bytes": 4390,
+      "sha256": "c16443e1fe0eace03f2b1d8b8d02c78a8138223fbc312c217a7e9146e639d213"
+    },
+    {
+      "path": "docs/style.css",
+      "bytes": 5408,
+      "sha256": "62b2225e38f7e17909a03bba4ee56bfbcb1a6bdd6eb235ffdc8fa71ea53f91c2"
+    },
+    {
+      "path": "docs/support.html",
+      "bytes": 4644,
+      "sha256": "3cba0ef5b29e45e87d39d7e1ba4ff68ff7efc27b9c794e545947ed97152beee7"
+    },
+    {
+      "path": "docs/trust.html",
+      "bytes": 5055,
+      "sha256": "6a3187094031e0d15889132b99b84f08e5c3ac22bd5534d713716e4d1cac998c"
+    },
+    {
+      "path": "docs/workflows.html",
+      "bytes": 6174,
+      "sha256": "44ab55b1426cc376685c1b8e91efc656541e5f1d638c35834d2fbaee2f96d3cc"
+    },
+    {
+      "path": "documentation-authorship.json",
+      "bytes": 2402,
+      "sha256": "fc3742cab1c9de503ff1c937ee75ff411538e37e81457b2cef13710fa28a8714"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 1686,
+      "sha256": "e12dd58551cb8a44222be6400a41b6f8d1da543b1498a85ff409f4ca91d92a6a"
+    },
+    {
+      "path": "examples/sea-level-comparison/campaign-summary.md",
+      "bytes": 658,
+      "sha256": "0aed04ca5c64d57960b7122833febd23015305f4ddf9e2ff6c83ed35329645ca"
+    },
+    {
+      "path": "examples/sea-level-comparison/campaign.json",
+      "bytes": 1149,
+      "sha256": "7864052dfdc700410fea4b49cb2c5a81abc7d8ac2b51c59d6cb5ebc7ec896952"
+    },
+    {
+      "path": "examples/sea-level-comparison/citation-audit-structural.json",
+      "bytes": 467,
+      "sha256": "594f63ff47ca598d19980711f456c49fb7f4744d7ac6803290c532d8c92b0d8a"
+    },
+    {
+      "path": "examples/sea-level-comparison/citation-audit.md",
+      "bytes": 621,
+      "sha256": "60052917957e63aef174f804d3f0993f24ab5593e0b5b5a3f3ccceabd23926f0"
+    },
+    {
+      "path": "examples/sea-level-comparison/claim-ledger.jsonl",
+      "bytes": 1168,
+      "sha256": "897bb6bc1b11129eecc78b5d54f1d6200f203fa510ccd7da70e995f7943f1062"
+    },
+    {
+      "path": "examples/sea-level-comparison/contradictions.md",
+      "bytes": 443,
+      "sha256": "91ca58d8c43807a2b6d85ad6687f00f1179d2d03d17d30a30ec1fa9e25745b49"
+    },
+    {
+      "path": "examples/sea-level-comparison/coverage-matrix.md",
+      "bytes": 533,
+      "sha256": "dd33010ae03c54d7d71154b0137ba0db578259a21fb47544d30cd55cfffd9ba3"
+    },
+    {
+      "path": "examples/sea-level-comparison/draft/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "examples/sea-level-comparison/draft/01-report.md",
+      "bytes": 2466,
+      "sha256": "f39fe249d3c97d93b32ffe7c23b7bfbdd539c5a4637561782a83a608a6c5c366"
+    },
+    {
+      "path": "examples/sea-level-comparison/evidence-digest.md",
+      "bytes": 346,
+      "sha256": "0ebfe3d1e740ad5e9955e211ff7bd725060e085cbe227da0989a3997aa06c48b"
+    },
+    {
+      "path": "examples/sea-level-comparison/notes/S001.md",
+      "bytes": 637,
+      "sha256": "5025b43c7eab7e9ca53a7502c8de3c9eaeecc65dfccad748436dc528c4967466"
+    },
+    {
+      "path": "examples/sea-level-comparison/notes/S002.md",
+      "bytes": 481,
+      "sha256": "9d01513f7b2382c0b6695ec16019510a1d57423d825467536fafbd0319ae49ca"
+    },
+    {
+      "path": "examples/sea-level-comparison/notes/S003.md",
+      "bytes": 508,
+      "sha256": "ee8e5ba71b979396463dc1459591fc7cf067f6298b1d81d1244b12c610d620c9"
+    },
+    {
+      "path": "examples/sea-level-comparison/notes/SOURCE-NOTE-TEMPLATE.md",
+      "bytes": 760,
+      "sha256": "da1fd7272a317eeb2bda18f281fdabc78e31f11f0cac74f16397316290549532"
+    },
+    {
+      "path": "examples/sea-level-comparison/outline.md",
+      "bytes": 292,
+      "sha256": "8ad73a889634e0ca2bcdd10d12fa75983e7b872a2948e1067a8ae6cdf656d537"
+    },
+    {
+      "path": "examples/sea-level-comparison/query-ledger.jsonl",
+      "bytes": 626,
+      "sha256": "06b8caaecdec28e02d2a90fa54489219143f14c6a98124d10f27e0ba37eced2d"
+    },
+    {
+      "path": "examples/sea-level-comparison/report.md",
+      "bytes": 2466,
+      "sha256": "f39fe249d3c97d93b32ffe7c23b7bfbdd539c5a4637561782a83a608a6c5c366"
+    },
+    {
+      "path": "examples/sea-level-comparison/research-brief.md",
+      "bytes": 923,
+      "sha256": "d168bb6a1c21d8db1f81a4354d8f6bdcf82e620482aee5be9aebec63200db641"
+    },
+    {
+      "path": "examples/sea-level-comparison/semantic-review.json",
+      "bytes": 1248,
+      "sha256": "9f3e67333ca34a8a52856cc1e2604ef325ad461550a1c55224a311d22d5c8c9d"
+    },
+    {
+      "path": "examples/sea-level-comparison/source-ledger.jsonl",
+      "bytes": 1848,
+      "sha256": "562c4bbfb50f3485afebeee1f4e1bacaf7f13e87bb45bfaffb2ef3a6ea96ad81"
+    },
+    {
+      "path": "fallbacks/degraded-capability.md",
+      "bytes": 1881,
+      "sha256": "8620ff4345b5ec6cd92b1312e8c48dc109496ca39d1df9df6fec87abcd2c958b"
+    },
+    {
+      "path": "fallbacks/universal-copy-paste-workflow.md",
+      "bytes": 2947,
+      "sha256": "07af3300bb4b8023e51c69803d26bb35276ddc8d95e388e0a0901e4451d6490f"
+    },
+    {
+      "path": "knowledge/source-navigation.md",
+      "bytes": 472,
+      "sha256": "44266ef86b073932c8eca8374403ab02b2bd473106bea82bf5b45753d469259a"
+    },
+    {
+      "path": "personas/omnara-investigative-research-intelligence.md",
+      "bytes": 2668,
+      "sha256": "8f4eec745c37d4dedc8253188fd882f345914a28d94425cfe5724db3a031989f"
+    },
+    {
+      "path": "references/campaign-operations.md",
+      "bytes": 2848,
+      "sha256": "63e7b74a5a94b9ae3be88329958d2fd1bae5d96b11e0ab6e9a4d965b67ee95ef"
+    },
+    {
+      "path": "references/canonical/inquiry-engine-v1.md",
+      "bytes": 2576,
+      "sha256": "351183c36a1d14b1fa28b1ddce9d0ad0437ecf627cff90150f4acbb02928afd0"
+    },
+    {
+      "path": "references/evidence-and-investigation.md",
+      "bytes": 2137,
+      "sha256": "55c65e4745160080b20101201eca6db8b346c068cfa8e4ed87eecedc53ffed02"
+    },
+    {
+      "path": "references/operating-doctrine.md",
+      "bytes": 1686,
+      "sha256": "2f3bc7e713537d08d7909cda54aeaf0c8cb47848eeb17037dfb944c30b771f80"
+    },
+    {
+      "path": "references/research-design-and-idea-development.md",
+      "bytes": 4952,
+      "sha256": "8b70fe4f2f7359b8c211f8a2145d126af948e210e41e6de811795f14c3ba7456"
+    },
+    {
+      "path": "references/research-to-manuscript.md",
+      "bytes": 7215,
+      "sha256": "3861f5ef59019a2b45e8c183c7461a7f8a30621e092082c8142b3b9fc4db9ad0"
+    },
+    {
+      "path": "references/review-contract.md",
+      "bytes": 3425,
+      "sha256": "97cc619239319ff719930feb4bd07af652e350f6d762c3a4d74146a2d34855c2"
+    },
+    {
+      "path": "references/search-cartography.md",
+      "bytes": 2229,
+      "sha256": "11f0d9fbe649f6e372bb2adc32b216012bca641f161dc9c04394fab8642406e7"
+    },
+    {
+      "path": "references/synthesis-and-citation-audit.md",
+      "bytes": 2875,
+      "sha256": "4affc03c01b6b0b68040bac5597cf83f9ff66dd74ce20e2f003a868fc43dbaa7"
+    },
+    {
+      "path": "references/tooling-cost-and-security.md",
+      "bytes": 1648,
+      "sha256": "29defbe80dc94f732f0ee5da00116d9fbf3517b29d28de44f767ae74dffa3807"
+    },
+    {
+      "path": "release-decision-v1.4.0.json",
+      "bytes": 651,
+      "sha256": "f5b7f2fad1ce198928c7a9c05497842c6e75f0322634cfacd9b93b375e6d202b"
+    },
+    {
+      "path": "schemas/research-campaign.schema.json",
+      "bytes": 1960,
+      "sha256": "877d13825fe51483737b3b16a1057b31d74f9f1ba72556312535ff9bef6d21c8"
+    },
+    {
+      "path": "scripts/assemble_report.py",
+      "bytes": 2210,
+      "sha256": "237501b1af510b41575e3f15894f0fc7f7858ccb67477615950685a618a97b02"
+    },
+    {
+      "path": "scripts/build_workspace_release.py",
+      "bytes": 3934,
+      "sha256": "cb1da41be7b7a60e2e0faf1ca263e6f8dd4de8692cf1e5e16b610aa76d35aec9"
+    },
+    {
+      "path": "scripts/citation_audit.py",
+      "bytes": 4815,
+      "sha256": "63b2296c56e52ed9e48af4dbcc3602978ec0d2c4facbdbf9b999f21c1fc89aeb"
+    },
+    {
+      "path": "scripts/custody.py",
+      "bytes": 3288,
+      "sha256": "8185171de2a2344645527288994c0a207f4573da4404333a72f7de6afa43ada9"
+    },
+    {
+      "path": "scripts/evidence_contract.py",
+      "bytes": 8344,
+      "sha256": "ce949ef9247f6feb75451aaf6b616d75235ab6980f60297573ac82a5b9a37ab8"
+    },
+    {
+      "path": "scripts/file_ops.py",
+      "bytes": 577,
+      "sha256": "5784f1d4e3ac7ca9f3dfd7f7c8a68eecb9d708fe7fac0a25cdda94d54d86b82f"
+    },
+    {
+      "path": "scripts/product_files.py",
+      "bytes": 1210,
+      "sha256": "40fb00604ea41c91cc335206d8d500aadcccf34604ece457123e839604876cb9"
+    },
+    {
+      "path": "scripts/research_campaign.py",
+      "bytes": 12969,
+      "sha256": "a1e9b9ecc981f256c0d3fbf6dc85ccc434b9102b53b8c750987766e8cdb517e4"
+    },
+    {
+      "path": "scripts/validate_release.py",
+      "bytes": 6127,
+      "sha256": "1a04770b0c07d258b6cde0b41d4f54d387e1134670dc9ae1d197c33beef19de0"
+    },
+    {
+      "path": "tests/test_campaign_room.py",
+      "bytes": 4142,
+      "sha256": "9442ee7b58f826450aa7db7d4e001d416f04728f0c4530dda81afc2ea9e29727"
+    },
+    {
+      "path": "tests/test_evidence_projection.cjs",
+      "bytes": 2559,
+      "sha256": "c1f8db787285a433f1cf55629243fdf710f8d6c5fb299aba04bfa25841caa3c3"
+    },
+    {
+      "path": "tests/test_product_custody.py",
+      "bytes": 2909,
+      "sha256": "0649a70fd540169e6cb9fa81fb582c5a8875b2d6be0d787a46fe1a78ffc33235"
+    },
+    {
+      "path": "tests/test_research_boundaries.py",
+      "bytes": 12145,
+      "sha256": "7d6c7a4ec6a16aeb1f0679b5143694fdf46ca49a9daba81ec4109ff9e05104f6"
+    },
+    {
+      "path": "tests/test_review_chronology.py",
+      "bytes": 1499,
+      "sha256": "cec1750e1666e363341c92e27032ae324ac18af5d930fe34295d8770907b177a"
+    },
+    {
+      "path": "tests/test_validate_release_profiles.py",
+      "bytes": 960,
+      "sha256": "45f18016893a9eb2d3509b0b14cbda858e050314b23664b4fc9b22778d1e4e95"
+    },
+    {
+      "path": "tests/test_workspace_launch.py",
+      "bytes": 2577,
+      "sha256": "9996059f38064ecef97f531671cce54ae2012c44ca634f2b821650550e5ce569"
+    },
+    {
+      "path": "verification/companion-format-20261015/authored-delta.json",
+      "bytes": 298,
+      "sha256": "7d8edff25356cf5a2a983cfcf0c3fb7c8a29bc416e918d5af8dca72f341e8d78"
+    },
+    {
+      "path": "verification/companion-format-20261015/authoring-response.md",
+      "bytes": 362,
+      "sha256": "e68167188df23212ce98dfe631d76a968dbb7df9e5b44c835f2d3a14f308df6d"
+    },
+    {
+      "path": "verification/companion-format-20261015/evidence.md",
+      "bytes": 374,
+      "sha256": "a4c9cb4e1d8a899f0f47196d3875b7f7cec650005980aa87e61414f3361c2416"
+    },
+    {
+      "path": "verification/companion-format-20261015/execution.md",
+      "bytes": 369,
+      "sha256": "a9877a3f7392c1ea2fdb0a0d3330f82b617aea0e33cd5117dd43088506d58d44"
+    },
+    {
+      "path": "verification/companion-format-20261015/previous-extra.md",
+      "bytes": 5767,
+      "sha256": "57f43ccb953c32e07649e687398d5f4d413f324a798cc3a210926bd3cae7f6b2"
+    },
+    {
+      "path": "verification/documentation-review.md",
+      "bytes": 1561,
+      "sha256": "f29913f435e0763d1653cc861a2c181b615a60eda2ec164b2a368fdf3c66b819"
+    },
+    {
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "bytes": 7306,
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    {
+      "path": "verification/purpose-release-20261015/DESIGN.md",
+      "bytes": 1000,
+      "sha256": "4e5e9276dd443264dd018039a58209fc0926f97b07a441da52273b970b5c3dc0"
+    },
+    {
+      "path": "verification/purpose-release-20261015/EVIDENCE-SCOPE.md",
+      "bytes": 391,
+      "sha256": "a7b27e484d5e41b2006eed433de0151b8fc8086f9660359081166793fd946350"
+    },
+    {
+      "path": "verification/purpose-release-20261015/browser-results.json",
+      "bytes": 632,
+      "sha256": "b05eb0a3e1fa3f65c570f75510d308f2e974eaf4d3c655fd2576ddf90b19d5b6"
+    },
+    {
+      "path": "verification/purpose-release-20261015/browser.cjs",
+      "bytes": 9653,
+      "sha256": "14a25b9cfcc8661d756aa740c7774c6f243170d05bd4f86ffcbd1f8a683f3b62"
+    },
+    {
+      "path": "verification/purpose-release-20261015/material-results.json",
+      "bytes": 252,
+      "sha256": "65bcc031d46f4567110c790e41988060cc0ed06ad0f389b5ac1fc2a6a9cb5e7a"
+    },
+    {
+      "path": "verification/purpose-release-20261015/storage-results.json",
+      "bytes": 164,
+      "sha256": "c57444ec3b97df8a9a8a7de01bec5177da82f26a7d1d0af6ac9d990bd52cc014"
+    },
+    {
+      "path": "verification/purpose-release-20261015/storage.cjs",
+      "bytes": 2335,
+      "sha256": "aa5635cf5ee04582257f1ac19158922f9a92a0ea8d25c1bf40031abd633a8fab"
+    },
+    {
+      "path": "verification/purpose-release-20261015/test_materials.py",
+      "bytes": 2994,
+      "sha256": "db6d78bb184b436c5dd224dd2a827ead28b70219fe15f46411d2832a2456c4e7"
+    },
+    {
+      "path": "workspace/README.md",
+      "bytes": 2583,
+      "sha256": "b3fb644c17baf433a0c81392be85b3894270f7f86e76ade4cb99f66bb17f1b61"
+    },
+    {
+      "path": "workspace/WORKING-GUIDE.md",
+      "bytes": 2419,
+      "sha256": "61738dc900afc731a7616b568381e5eece802d90522969edbb0ac115958b8094"
+    },
+    {
+      "path": "workspace/advanced.html",
+      "bytes": 6237,
+      "sha256": "f682ef985c135accbb7043d23f8e7c86e1da76835119c42b8dde353b05e05088"
+    },
+    {
+      "path": "workspace/app.js",
+      "bytes": 45094,
+      "sha256": "6294b70f9a33c82d75f7d1e4e5a99f5c95d4650e7818b68da8eb49f032f65de5"
+    },
+    {
+      "path": "workspace/assets/omnara-icon.png",
+      "bytes": 2357901,
+      "sha256": "e88e461d352bf6734e29538a93e3f86dda6aefaef4311a06c5b4fb1686e564a2"
+    },
+    {
+      "path": "workspace/assets/omnara.icns",
+      "bytes": 4190412,
+      "sha256": "614729ea0e652055ff1930cf3adbd3e565c5384670c5e5be50928cc7fe74027f"
+    },
+    {
+      "path": "workspace/assets/omnara.ico",
+      "bytes": 261071,
+      "sha256": "968853189f9afc892206d3132e82d83ffb26fd1af476e263d41b207cc1d98cfc"
+    },
+    {
+      "path": "workspace/assets/proof-cabinet.png",
+      "bytes": 1672477,
+      "sha256": "40690979b978967df0c0901d90dae6032c08e48a10889e3308ae918d0d8fabb0"
+    },
+    {
+      "path": "workspace/assets/survey-folio.png",
+      "bytes": 2645228,
+      "sha256": "a9bce50fa29537f38cbc5854531e343f753340c5a08af442a400e7e8a586479a"
+    },
+    {
+      "path": "workspace/assets/tracework.png",
+      "bytes": 1793992,
+      "sha256": "66e3f094daae304919093c6a886f76cbc7b547759ac1c52a45594149fdade7bd"
+    },
+    {
+      "path": "workspace/campaign.py",
+      "bytes": 8923,
+      "sha256": "299cda4be058da03a62277256217cdac5d4650722b1458e1fa968e0d8935e507"
+    },
+    {
+      "path": "workspace/common.js",
+      "bytes": 5936,
+      "sha256": "c48f15d77fd17f3c8621373985cd69e22ccdd399daca9bc59bd7f7b656e7d755"
+    },
+    {
+      "path": "workspace/create_entry.py",
+      "bytes": 4718,
+      "sha256": "94d9152891d5190433916f2248cf8ec055879deea40d22c13724770a12a1a176"
+    },
+    {
+      "path": "workspace/index.html",
+      "bytes": 1189,
+      "sha256": "fdf351f9a2a31344a7daeb395af7ba421dd8d82e0a37096183d11eb5c718b69e"
+    },
+    {
+      "path": "workspace/open.py",
+      "bytes": 294,
+      "sha256": "ab0c0c2e2ec3251626cd9d3e3aedb4df954a7b0f63b9b4cf29f40577888ddee5"
+    },
+    {
+      "path": "workspace/runtime.py",
+      "bytes": 8013,
+      "sha256": "f9596b9d93d5b1accf165a22ba763ff4d53ed6e50dc7c5b919220958941859c9"
+    },
+    {
+      "path": "workspace/skins.css",
+      "bytes": 20093,
+      "sha256": "552cb8a922b1e91ee7595c79cd529933ace67231b09ed086329fa58fcf9b944b"
+    },
+    {
+      "path": "workspace/style.css",
+      "bytes": 49946,
+      "sha256": "d6bb9533be501880ae5e6a2a5dd8a61cb9a382e28bedcb87324943ccd1567a59"
+    },
+    {
+      "path": "workspace/vendor/pypdf-LICENSE",
+      "bytes": 1605,
+      "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524"
+    },
+    {
+      "path": "workspace/vendor/pypdf/__init__.py",
+      "bytes": 1283,
+      "sha256": "612ff566b4378c13c7b1180cb2da89ac0b6cde5500a63fe530e30ae6a88b1b9c"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_cmap.py",
+      "bytes": 12572,
+      "sha256": "0b8eea205808d522a7e4bad3e222b39c6964752b58a3a3b7259904292ee09241"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/__init__.py",
+      "bytes": 1373,
+      "sha256": "035d44440b70b56ae91953b34d296b0b56b74fd1c29562c1591c067b7fcf7eed"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/_codecs.py",
+      "bytes": 10555,
+      "sha256": "e3aa11649c92c06c42269d648c87abee3b3f4d84a38f81acda2d9471edeff9e1"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/adobe_glyphs.py",
+      "bytes": 447213,
+      "sha256": "b7770314f0eac08cf5c3d07481d5738dd73c7842bd02e4639397fb95a130fdf6"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/core_font_metrics.py",
+      "bytes": 114968,
+      "sha256": "14b3d66d3678871790597820d63a397b8a972821642846397bce54d9b2c533a9"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/pdfdoc.py",
+      "bytes": 4269,
+      "sha256": "c5f4af30562cbf1b9a490d14bbdbd90ca681d16bbce61d6e0a20758bdac07145"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/std.py",
+      "bytes": 2630,
+      "sha256": "0f240cb84a40184a52f6ecb58d67f87278fe92a4a13ce0228f9b08ed0d580fc1"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/symbol.py",
+      "bytes": 3734,
+      "sha256": "9c86864089615822623cc1ebc149661871fefdf397c842af82e466b8a5dc1809"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_codecs/zapfding.py",
+      "bytes": 3742,
+      "sha256": "3d0c63c510bad7a778d711777b15713f55bc9cce10ad97e33b7966b4bc6913fb"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_crypt_providers/__init__.py",
+      "bytes": 3054,
+      "sha256": "2b767a02e5e15d579780b7adf93ba4ab682df47eba3a076ea6cbf1212d429a42"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_crypt_providers/_base.py",
+      "bytes": 1711,
+      "sha256": "fdfe77323eaf8af84464c438bcdc4de46d083a0158fa7e7f95e91ed1cfea88d5"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_crypt_providers/_cryptography.py",
+      "bytes": 4460,
+      "sha256": "f733a4933312b17e1a974454934a8cd1d29f7dc1e47b8c1f9845caf64c28450f"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_crypt_providers/_fallback.py",
+      "bytes": 3334,
+      "sha256": "bec628a30475602015feaf87add21986451cac26fa1ef44134c626d3742d094f"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_crypt_providers/_pycryptodome.py",
+      "bytes": 3280,
+      "sha256": "bb8bed2e8ecdbfa02a6513671f5a0d3425af4d86a8c1f4957febe5916def4fab"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_doc_common.py",
+      "bytes": 54398,
+      "sha256": "54a5f4cd06ba5f658a9ed175b9c6224134b3dcf9f98ab11fc4da1f36e02a262e"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_encryption.py",
+      "bytes": 49546,
+      "sha256": "319f3e012455b473ceb9c51df87f4a45f94eab902f88f14f8e5769901540a1ce"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_font.py",
+      "bytes": 14256,
+      "sha256": "50ad53071d7979e53daa4661bf38a0e1823eb6365382007eca20b414b73767bb"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_page.py",
+      "bytes": 90193,
+      "sha256": "f93c459a77c433dbd2541e94d1fdfa599e486ca5fe3e3efe9348eaf94552639c"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_page_labels.py",
+      "bytes": 8626,
+      "sha256": "bfa0a9bba3495c2f5143f05e19d866d39695f19eb3c623d1367eaa129d41b951"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_protocols.py",
+      "bytes": 2123,
+      "sha256": "eeacfdd8b55d3eb6244a97543e9029f54e065b98f13414df55ca545b052110ea"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_reader.py",
+      "bytes": 57708,
+      "sha256": "9aaa6780e62c061509f0d3b658dbdac185404fecadac01f7f9d35ac009ce2024"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_text_extraction/__init__.py",
+      "bytes": 8515,
+      "sha256": "6b7677deb4154e230a1adc2deff6df5e53e8b1b493f2bcc42e8367b74e77fd0c"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_text_extraction/_layout_mode/__init__.py",
+      "bytes": 340,
+      "sha256": "454408c22530ce778db5c9639d533a8e445a7a6ea980fee6383dbe3019ada6fc"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_text_extraction/_layout_mode/_fixed_width_page.py",
+      "bytes": 15370,
+      "sha256": "789bde0dbc8ca281bdef4a893a13394706fd668cb2243ca7cd6a55f5aec84b6d"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_text_extraction/_layout_mode/_text_state_manager.py",
+      "bytes": 8221,
+      "sha256": "5d5ac88de4dde6349d31ec41431b34b4be48e5150e8ad4663759842ce70a626e"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_text_extraction/_layout_mode/_text_state_params.py",
+      "bytes": 5481,
+      "sha256": "872c3aa670bcba9064a055542772c7f21048207acdc22a9aa9c632cc8232afa6"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_text_extraction/_text_extractor.py",
+      "bytes": 14388,
+      "sha256": "b54a9bbc2ebd305706406501b7f63caeab1535ffbcb0c171003c8a9da8b4a232"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_utils.py",
+      "bytes": 20814,
+      "sha256": "2df8188c0ad153b97d19201bb681b3bbdbd507e7243e2d657b4eb543a7072656"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_version.py",
+      "bytes": 23,
+      "sha256": "2416f2ebd53fb332339ad719e9569c95eedc0157bb9e1573ee0205d0d07716aa"
+    },
+    {
+      "path": "workspace/vendor/pypdf/_writer.py",
+      "bytes": 131834,
+      "sha256": "1819e02d0b0bcd9c1fa483dc5c22e2a7849be22c93474c33c235dd6dd076a4e3"
+    },
+    {
+      "path": "workspace/vendor/pypdf/annotations/__init__.py",
+      "bytes": 990,
+      "sha256": "7f693ffa3027dfd082076ecac50fdef771a29e7ce40076d49e749e1899758f21"
+    },
+    {
+      "path": "workspace/vendor/pypdf/annotations/_base.py",
+      "bytes": 961,
+      "sha256": "79ea1cf6fdb0d798c05212978f8f25d5b07ae98801815fb6bf92085091febf0b"
+    },
+    {
+      "path": "workspace/vendor/pypdf/annotations/_markup_annotations.py",
+      "bytes": 11862,
+      "sha256": "b162a1181086ed7f688c0bc4691304a093fe7d8e8572b94574e9ad79f219066d"
+    },
+    {
+      "path": "workspace/vendor/pypdf/annotations/_non_markup_annotations.py",
+      "bytes": 3649,
+      "sha256": "676214bdc08e713729261497adec7ff6b8983360fae17c4543fbda735d013515"
+    },
+    {
+      "path": "workspace/vendor/pypdf/constants.py",
+      "bytes": 23634,
+      "sha256": "9f672ef873a6a16e7feb14165442a8e36ad2249d0ff7484bd6cf33fa9174a1cb"
+    },
+    {
+      "path": "workspace/vendor/pypdf/errors.py",
+      "bytes": 1947,
+      "sha256": "070d56f61c4eb03830ab053a628436974f89894c93aba979423542afe5b81850"
+    },
+    {
+      "path": "workspace/vendor/pypdf/filters.py",
+      "bytes": 30420,
+      "sha256": "237c2d528bdaeccdd68233730b2a74ac634854a9899a34bcebc8d8af5c0b347f"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/__init__.py",
+      "bytes": 3468,
+      "sha256": "56ba9d61fb5010278f0d4dab5d532012a45a60547ccce57f7ef260a35f71feec"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_appearance_stream.py",
+      "bytes": 26834,
+      "sha256": "31c0cbd2070a34df4d5cd53a64fc60b7b398a25dbe168356615980c20030e0f3"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_base.py",
+      "bytes": 32755,
+      "sha256": "f488de45b70b1eb73f94b1947d564c8ee83ca3eb7af17ece35295f9c32a73e64"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_data_structures.py",
+      "bytes": 65869,
+      "sha256": "35f76eb49aa9f253fb1cd3e5eb9e3875b80f9bbc2616c755e376bde054e7b782"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_files.py",
+      "bytes": 16238,
+      "sha256": "36d4a4468e890608ac8b840ecab56778ef3dd5ba15b2e636e614708a3e97f510"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_fit.py",
+      "bytes": 5515,
+      "sha256": "5ff8800c98f5618e0f512b52eeb1560b6c51d8b5154af2ad500932d001402033"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_image_inline.py",
+      "bytes": 12819,
+      "sha256": "2a5000fd91a2446ce368f1b74af6eda8619e36a6d065517e515536302f2efd28"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_image_xobject.py",
+      "bytes": 21965,
+      "sha256": "7f560334bae2f927a5faaa72ca75c0ee7c7e662493a8061433ce9338414883af"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_link.py",
+      "bytes": 5929,
+      "sha256": "b4da99d86616c6a80566c948d032d97a85e59ed6b182c1c2f1791615f496c781"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_outline.py",
+      "bytes": 1094,
+      "sha256": "a8a6cc5f8d8e59faa7a2922213a054cba12f7532c67b766d8da89637ce49a5a6"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_rectangle.py",
+      "bytes": 3785,
+      "sha256": "94ea927c58af43180137d2d4f5aa87a313c7f1a08f4c350d81166c34451de9f7"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_utils.py",
+      "bytes": 7258,
+      "sha256": "bd30c07ac7c6f9c24d0ca8a5cff91b805a1d0084f37797a3a695871a3bc2a279"
+    },
+    {
+      "path": "workspace/vendor/pypdf/generic/_viewerpref.py",
+      "bytes": 6774,
+      "sha256": "b6a5445a6bddfc359316848ca51393b25d528a338d9ef71267e8d74e8fdc8cea"
+    },
+    {
+      "path": "workspace/vendor/pypdf/pagerange.py",
+      "bytes": 7108,
+      "sha256": "d9bb76d634199bef5aab66d57f74d7b87f3fc06571edbf53e94acc1570842614"
+    },
+    {
+      "path": "workspace/vendor/pypdf/papersizes.py",
+      "bytes": 1413,
+      "sha256": "e93cf9b1f34dff724e51aa58f3753e95a928867a57600d2148440d98e54b14bf"
+    },
+    {
+      "path": "workspace/vendor/pypdf/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "workspace/vendor/pypdf/types.py",
+      "bytes": 1915,
+      "sha256": "b09ef01f393b111fc227b90ffacf2ef5ac459e40979c5a6bf27cdc8f50314dab"
+    },
+    {
+      "path": "workspace/vendor/pypdf/xmp.py",
+      "bytes": 30239,
+      "sha256": "00289e95b3fb680b03cb67e67b8a3d61de32ec7e0a7c46d4337494c4c97c8c8e"
+    },
+    {
+      "path": "workspace/work.css",
+      "bytes": 5780,
+      "sha256": "a0e13345167c6a22aa0c86f8ce4128bcb4e08fc5cc3e9a01cdc288d80f02b7bf"
+    },
+    {
+      "path": "workspace/work.js",
+      "bytes": 13235,
+      "sha256": "3ac6f70443428f75b419596f257a0fc92a06e9c0fc5330f8372bbe8539f8d668"
+    },
+    {
+      "path": "workspace/work_io.py",
+      "bytes": 7074,
+      "sha256": "c2f8f7d8b26b28a2ffeea54e546674854724fd4404eabfd80787fd4e574824e5"
+    }
+  ],
+  "bytes": 25515011,
+  "count": 207
+}
